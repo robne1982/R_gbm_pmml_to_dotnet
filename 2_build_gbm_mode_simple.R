@@ -11,7 +11,7 @@ names(iris)
 
 formula <- Sepal.Length ~ Sepal.Width + Petal.Length + Petal.Width + Species
 
-mdl_simple <- gbm(formula = formula, n.trees = 1000, 
+mdl_simple <- gbm(formula = formula, n.trees = 2, 
                         data = iris, distribution = 'gaussian', interaction.depth = 1) 
 
 # Check is predicts
