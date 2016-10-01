@@ -7,11 +7,11 @@ library("r2pmml")
 # All I need is a GBM model I can use for testing!
 # We'll use iris
 
-names(iris)
+names(iris) <- gsub("\\.", "", names(iris))
 
-formula <- Sepal.Length ~ Sepal.Width + Petal.Length + Petal.Width + Species
+formula <- SepalLength ~ SepalWidth + PetalLength + PetalWidth + Species
 
-mdl_simple <- gbm(formula = formula, n.trees = 2, 
+mdl_simple <- gbm(formula = formula, n.trees = 20, 
                         data = iris, distribution = 'gaussian', interaction.depth = 1) 
 
 # Check is predicts
@@ -19,7 +19,9 @@ summary(mdl_interactions)
 
 # Add predictions
 iris_inc_preds <- iris
-iris_inc_preds$mdl_pred <- predict(mdl_simple, iris_inc_preds, n.trees = 1000)
+iris_inc_preds$mdl_pred <- predict(mdl_simple, iris_inc_preds, n.trees = 20)
+
+unique(iris_inc_preds$mdl_pred)
 
 # Write csv data to file
 write.csv(x = iris_inc_preds, file = 'iris_inc_preds_simple.csv',col.names = TRUE, row.names = F)

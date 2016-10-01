@@ -1,0 +1,186 @@
+Public Function fnScoreModel(ByRef dt As DataTable)
+For Each row As DataRow In dt.Rows
+Dim score as double =  5.843333333333335
+IF row.item("PetalLength") is Nothing THEN 
+score = score + -6.666666666680499E-7
+ END IF
+IF row.item("PetalLength") <4.25 THEN 
+score = score + -6.633333333333349E-4
+ END IF
+IF row.item("PetalLength") >=4.25 THEN 
+score = score + 7.566666666666655E-4
+ END IF
+IF row.item("PetalLength") is Nothing THEN 
+score = score + -4.733266666666765E-5
+ END IF
+IF row.item("PetalLength") <4.25 THEN 
+score = score + -6.751700000000008E-4
+ END IF
+IF row.item("PetalLength") >=4.25 THEN 
+score = score + 6.701957142857129E-4
+ END IF
+IF row.item("PetalWidth") is Nothing THEN 
+score = score + 2.4530308285712863E-5
+ END IF
+IF row.item("PetalWidth") <1.35 THEN 
+score = score + -5.908676974903486E-4
+ END IF
+IF row.item("PetalWidth") >=1.35 THEN 
+score = score + 6.237336296992464E-4
+ END IF
+IF row.item("PetalLength") is Nothing THEN 
+score = score + -8.061529044702719E-5
+ END IF
+IF row.item("PetalLength") <3.95 THEN 
+score = score + -8.383736592722071E-4
+ END IF
+IF row.item("PetalLength") >=3.95 THEN 
+score = score + 5.147662850584713E-4
+ END IF
+IF row.item("PetalLength") is Nothing THEN 
+score = score + -1.1148275596027115E-5
+ END IF
+IF row.item("PetalLength") <4.25 THEN 
+score = score + -6.408327531666757E-4
+ END IF
+IF row.item("PetalLength") >=4.25 THEN 
+score = score + 7.084911273418569E-4
+ END IF
+IF row.item("PetalLength") is Nothing THEN 
+score = score + 2.3258547748459267E-5
+ END IF
+IF row.item("PetalLength") <4.25 THEN 
+score = score + -6.240705088853731E-4
+ END IF
+IF row.item("PetalLength") >=4.25 THEN 
+score = score + 6.53552629207717E-4
+ END IF
+IF row.item("PetalLength") is Nothing THEN 
+score = score + 8.651066265348254E-5
+ END IF
+IF row.item("PetalLength") <3.75 THEN 
+score = score + -8.073006853811862E-4
+ END IF
+IF row.item("PetalLength") >=3.75 THEN 
+score = score + 5.334163366708169E-4
+ END IF
+IF row.item("PetalLength") is Nothing THEN 
+score = score + -1.0011820551476484E-4
+ END IF
+IF row.item("PetalLength") <4.6 THEN 
+score = score + -5.682802304110148E-4
+ END IF
+IF row.item("PetalLength") >=4.6 THEN 
+score = score + 8.362058442777351E-4
+ END IF
+IF row.item("PetalLength") is Nothing THEN 
+score = score + -1.2420012421415284E-4
+ END IF
+IF row.item("PetalLength") <4.05 THEN 
+score = score + -7.921610080047131E-4
+ END IF
+IF row.item("PetalLength") >=4.05 THEN 
+score = score + 5.26182841581919E-4
+ END IF
+IF row.item("PetalLength") is Nothing THEN 
+score = score + 5.254616152181371E-5
+ END IF
+IF row.item("PetalLength") <4.55 THEN 
+score = score + -5.485122898791617E-4
+ END IF
+IF row.item("PetalLength") >=4.55 THEN 
+score = score + 8.602184555918744E-4
+ END IF
+IF row.item("PetalLength") is Nothing THEN 
+score = score + 5.861672796182243E-5
+ END IF
+IF row.item("PetalLength") <3.95 THEN 
+score = score + -7.723465996325834E-4
+ END IF
+IF row.item("PetalLength") >=3.95 THEN 
+score = score + 5.536587103584898E-4
+ END IF
+IF row.item("PetalLength") is Nothing THEN 
+score = score + 8.025394761653966E-5
+ END IF
+IF row.item("PetalLength") <4.25 THEN 
+score = score + -6.951445215034941E-4
+ END IF
+IF row.item("PetalLength") >=4.25 THEN 
+score = score + 7.960063806504169E-4
+ END IF
+IF row.item("PetalLength") is Nothing THEN 
+score = score + -3.8402132683057455E-5
+ END IF
+IF row.item("PetalLength") <3.85 THEN 
+score = score + -7.617836067130403E-4
+ END IF
+IF row.item("PetalLength") >=3.85 THEN 
+score = score + 4.4385218333693104E-4
+ END IF
+IF row.item("PetalLength") is Nothing THEN 
+score = score + 1.8279232852721587E-5
+ END IF
+IF row.item("PetalLength") <4.25 THEN 
+score = score + -6.026801680730908E-4
+ END IF
+IF row.item("PetalLength") >=4.25 THEN 
+score = score + 5.06175905008717E-4
+ END IF
+IF row.item("PetalLength") is Nothing THEN 
+score = score + 2.8068729321484132E-5
+ END IF
+IF row.item("PetalLength") <4.55 THEN 
+score = score + -5.54038496495108E-4
+ END IF
+IF row.item("PetalLength") >=4.55 THEN 
+score = score + 7.689324712698742E-4
+ END IF
+IF row.item("PetalLength") is Nothing THEN 
+score = score + -5.3183351551465234E-5
+ END IF
+IF row.item("PetalLength") <4.55 THEN 
+score = score + -4.932323330700274E-4
+ END IF
+IF row.item("PetalLength") >=4.55 THEN 
+score = score + 8.269146114856591E-4
+ END IF
+IF row.item("PetalLength") is Nothing THEN 
+score = score + -2.9619269927324818E-5
+ END IF
+IF row.item("PetalLength") <3.95 THEN 
+score = score + -8.182242649706538E-4
+ END IF
+IF row.item("PetalLength") >=3.95 THEN 
+score = score + 6.243458479134845E-4
+ END IF
+IF row.item("PetalLength") is Nothing THEN 
+score = score + -5.920823132274402E-5
+ END IF
+IF row.item("PetalLength") <3.8 THEN 
+score = score + -8.118869811770526E-4
+ END IF
+IF row.item("PetalLength") >=3.8 THEN 
+score = score + 4.4257760191346177E-4
+ END IF
+IF row.item("PetalLength") is Nothing THEN 
+score = score + -1.0808078473257244E-4
+ END IF
+IF row.item("PetalLength") <4.25 THEN 
+score = score + -7.060058445315584E-4
+ END IF
+IF row.item("PetalLength") >=4.25 THEN 
+score = score + 5.060044118177374E-4
+ END IF
+IF row.item("PetalLength") is Nothing THEN 
+score = score + -3.653572102943064E-5
+ END IF
+IF row.item("PetalLength") <4.25 THEN 
+score = score + -6.645113599705852E-4
+ END IF
+IF row.item("PetalLength") >=4.25 THEN 
+score = score + 5.749142432027462E-4
+ END IF
+Console.WriteLine(" score delta  = "  & CStr(score - row.Item("mdl_pred")))
+Next row
+End Function
