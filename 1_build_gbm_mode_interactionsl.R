@@ -8,21 +8,22 @@ library("r2pmml")
 # We'll use iris
 
 names(iris)
+names(iris) <- gsub("\\.", "", names(iris))
 
-formula <- Sepal.Length ~ Sepal.Width + Petal.Length + Petal.Width + Species
+formula <- SepalLength ~ SepalWidth + PetalLength + PetalWidth + Species
 
-mdl_interactions <- gbm(formula = formula, n.trees = 1000, 
-           data = iris, distribution = 'gaussian', interaction.depth = 3) 
+mdl_interactions <- gbm(formula = formula, n.trees = 10, 
+           data = iris, distribution = 'gaussian', interaction.depth = 10) 
 
 # Check is predicts
 summary(mdl_interactions)
 
 # Add predictions
 iris_inc_preds_interactions <- iris
-iris_inc_preds_interactions$mdl_pred <- predict(mdl_interactions, iris_inc_preds_interactions, n.trees = 1000)
+iris_inc_preds_interactions$mdl_pred <- predict(mdl_interactions, iris_inc_preds_interactions, n.trees = 10)
 
 # Write csv data to file
-write.csv(x = iris_inc_preds, file = 'iris_inc_preds_interactions.csv',col.names = TRUE, row.names = F)
+write.csv(x = iris_inc_preds_interactions, file = 'iris_inc_preds_interactions.csv',col.names = TRUE, row.names = F)
 
 # Export model to PMML
 r2pmml(mdl_interactions, "mdl.pmml")
