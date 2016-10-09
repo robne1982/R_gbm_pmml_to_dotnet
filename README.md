@@ -14,7 +14,7 @@ After getting started I realized that to be able to convert *any* GBM output to 
 - There's a routine for 'bernoulli' R GBM's and another for 'gaussian' GBM's. They are seperate because the PMML is quite different for the two.
 - The routines support any arbitrarily complex GBM, at least in terms of n.trees and interaction.depth settings
 - The rotuines ignore the PMML types and make the assumption that any feature that can cast as a number is a number, and if not, it's a character. This would be easy to change but this minimal approach works for me. Just don't call your categorical variables "1", "2" etc and it will work fine!
-- I'll test as far as making sure scores match for 1 example case based on gaussian GBM's (using the iris dataset) and for bernoulli GBM's using Titanic. There could be reasons why the conversion will fail for other datasets. If I find these I'll update the code, but please test your code!
+- I'll test as far as making sure scores match for 1 example case based on gaussian GBM's (using the iris dataset) and for bernoulli GBM's using Titanic. There could be reasons why the conversion will fail for other datasets. If I find these I'll update the code, but please test your model!
 
 
 
