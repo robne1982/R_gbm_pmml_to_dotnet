@@ -1,8 +1,9 @@
 # R_gbm_pmml_to_dotnet
 
-Convert R gbm models to .NET code, via PMML.
+Convert R gbm models to .NET code, via PMML. This isn't the prettiest or most generic code, but you may it useful if you need to do something similar.
 
 ## Introduction
+
 Whilst I realize it's not something that everyone (anyone?!) will need, I want to score gbm models in .NET, and I want to build them in R. I've tried a few other options (RServe, R.NET) but they all proved to have poor performance, so I figure that just writing the scoring code out in .NET is going to be fastest and simplest approach.
 
 This project will have some R example code to generate a gbm model using the R gbm library. We'll then create a PMML version of this model and write a generic function in R to create .NET output (probably VB.NET as that's what I need, but I realise this means I'm not cool). Finally I'll test that the code works in .NET.
@@ -17,6 +18,32 @@ After getting started I realized that to be able to convert *any* GBM output to 
 - The code assumes you take care of NA's manually. Missings break the .NET code for now.
 - For Bernoulli GBM's the .NET code value is equivalent to predicting in R with type='link'. It's easy to apply the logistic trasformation if needed.
 - I'll test as far as making sure scores match for 1 example case based on gaussian GBM's (using the iris dataset) and for bernoulli GBM's using Titanic. There could be reasons why the conversion will fail for other datasets. If I find these I'll update the code, but please test your model!
+- At the moment the VB.NET code assumes you have data in a data table with the EXACT same names as in R. A dictionary/hash map may be more efficient if you would have to construct a data table in .NET from scratch. If you already have one, this approach may be suitable.
+
+## Files
+
+### 1_build_gbm_gaussian_iris.R
+
+Builds a simple gaussian GBM on the iris dataset. Outputs iris_inc_preds_interactions.csv with the raw data and predictions, and iris_mdl.pmml, which is the PMML representation of this model.
+
+### 2_build_gbm_bernoulli_titanic_data.R
+
+As above, but builds a Bernoulli gbm on titanic data (predicting survival). Outputs titanic_inc_preds_interactions.csv (data + preds) and titanicmdl.pmml.
+
+### 9_pmml_functions.R
+
+Functions to parse the PMML files, iterate through the trees, and write .NET
+
+### 11_convert_gaussian_gbm_pmml_vb_dot_net.R
+
+Code that uses 9_pmml_functions.R, plus some guassian model specific code, to produce VB.NET code
+
+### 12_convert_gbm_bernoulli_pmml_vb_dot_net.R
+
+As above, but for GBM. Minimal changes, other than to account for the different structure of the PMML file for Bernoulli GBM models.
 
 
+## Testing
+
+There are two VB.NET projects that test that the code produced work. These are **r_gbm_pmml_to_vb_dot_net_bernoulli** and **r_gbm_pmml_to_vb_dot_net_gaussian**. For now I just copied/pasted the VB.NET in to these. 
 
