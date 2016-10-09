@@ -18,6 +18,7 @@ After getting started I realized that to be able to convert *any* GBM output to 
 - The code assumes you take care of NA's manually. Missings break the .NET code for now.
 - For Bernoulli GBM's the .NET code value is equivalent to predicting in R with type='link'. It's easy to apply the logistic trasformation if needed.
 - I'll test as far as making sure scores match for 1 example case based on gaussian GBM's (using the iris dataset) and for bernoulli GBM's using Titanic. There could be reasons why the conversion will fail for other datasets. If I find these I'll update the code, but please test your model!
+- At the moment the VB.NET code assumes you have data in a data table with the EXACT same names as in R. A dictionary/hash map may be more efficient if you would have to construct a data table in .NET from scratch. If you already have one, this approach may be suitable.
 
 ## Files
 
@@ -42,4 +43,7 @@ Code that uses 9_pmml_functions.R, plus some guassian model specific code, to pr
 As above, but for GBM. Minimal changes, other than to account for the different structure of the PMML file for Bernoulli GBM models.
 
 
+## Testing
+
+There are two VB.NET projects that test that the code produced work. These are **r_gbm_pmml_to_vb_dot_net_bernoulli** and **r_gbm_pmml_to_vb_dot_net_gaussian**. For now I just copied/pasted the VB.NET in to these. 
 
