@@ -1,475 +1,235 @@
 Public Function fnScoreModel(ByRef dt As DataTable)
 For Each row As DataRow In dt.Rows
 Dim score as double =  5.843333333333335
-Tree #1
-IF row.item("PetalWidth") is Nothing THEN 
-score = score + 5.399999999999897E-5
- END IF
-IF row.item("PetalWidth") <1.25 THEN 
-'Start of a complex loop
-IF row.item("PetalWidth") is Nothing THEN 
-score = score + -7.295402298850586E-4
- END IF
-IF row.item("PetalWidth") <0.25 THEN 
-score = score + -9.100000000000014E-4
- END IF
-IF row.item("PetalWidth") >=0.25 THEN 
-score = score + -5.361904761904771E-4
- END IF
-'End of a complex loop
- END IF
-IF row.item("PetalWidth") >=1.25 THEN 
-'Start of a complex loop
+'  Tree #1
 IF row.item("PetalLength") is Nothing THEN 
-score = score + 5.479710144927527E-4
- END IF
-IF row.item("PetalLength") <5.45 THEN 
-'Start of a complex loop
-IF row.item("PetalLength") is Nothing THEN 
-score = score + 1.966666666666654E-4
- END IF
-IF row.item("PetalLength") <4.6 THEN 
-score = score + 7.205128205128081E-5
- END IF
-IF row.item("PetalLength") >=4.6 THEN 
-score = score + 2.9196078431372417E-4
- END IF
-'End of a complex loop
- END IF
-IF row.item("PetalLength") >=5.45 THEN 
-score = score + 0.0012066666666666664
- END IF
-'End of a complex loop
- END IF
-Tree #2
-IF row.item("PetalLength") is Nothing THEN 
-score = score + -1.661913840408095E-5
+score = score + -2.4666666666667916E-5
  END IF
 IF row.item("PetalLength") <3.95 THEN 
 'Start of a complex loop
-IF row.item("SepalWidth") is Nothing THEN 
-score = score + -7.91154965986396E-4
- END IF
-IF row.item("SepalWidth") <3.45 THEN 
-'Start of a complex loop
 IF row.item("PetalWidth") is Nothing THEN 
-score = score + -8.884124206349217E-4
+score = score + -7.79696969696971E-4
  END IF
-IF row.item("PetalWidth") <0.25 THEN 
-score = score + -9.995661904761916E-4
+IF row.item("PetalWidth") <0.35 THEN 
+'Start of a complex loop
+IF row.item("SepalWidth") is Nothing THEN 
+score = score + -8.998550724637695E-4
  END IF
-IF row.item("PetalWidth") >=0.25 THEN 
-score = score + -7.327971428571442E-4
+IF row.item("SepalWidth") <3.3 THEN 
+score = score + -0.0011733333333333344
+ END IF
+IF row.item("SepalWidth") >=3.3 THEN 
+score = score + -6.89487179487181E-4
  END IF
 'End of a complex loop
  END IF
-IF row.item("SepalWidth") >=3.45 THEN 
-score = score + -5.789568831168853E-4
+IF row.item("PetalWidth") >=0.35 THEN 
+score = score + -5.033333333333346E-4
  END IF
 'End of a complex loop
  END IF
 IF row.item("PetalLength") >=3.95 THEN 
 'Start of a complex loop
 IF row.item("PetalLength") is Nothing THEN 
-score = score + 6.610997107304447E-4
+score = score + 5.685714285714274E-4
  END IF
-IF row.item("PetalLength") <5.65 THEN 
+IF row.item("PetalLength") <5.55 THEN 
 'Start of a complex loop
 IF row.item("SepalWidth") is Nothing THEN 
-score = score + 4.0280244390063577E-4
+score = score + 3.33333333333332E-4
  END IF
-IF row.item("SepalWidth") <2.8499999999999996 THEN 
-score = score + 2.3980649051928317E-4
+IF row.item("SepalWidth") <3.05 THEN 
+score = score + 1.6666666666666541E-4
  END IF
-IF row.item("SepalWidth") >=2.8499999999999996 THEN 
-score = score + 5.250494089366503E-4
- END IF
-'End of a complex loop
- END IF
-IF row.item("PetalLength") >=5.65 THEN 
-score = score + 0.0012637933333333325
+IF row.item("SepalWidth") >=3.05 THEN 
+score = score + 6.666666666666655E-4
  END IF
 'End of a complex loop
  END IF
-Tree #3
+IF row.item("PetalLength") >=5.55 THEN 
+score = score + 0.001156666666666666
+ END IF
+'End of a complex loop
+ END IF
+'  Tree #2
 IF row.item("PetalLength") is Nothing THEN 
-score = score + -3.2822609706419332E-6
+score = score + -8.197991794871943E-5
  END IF
-IF row.item("PetalLength") <4.25 THEN 
+IF row.item("PetalLength") <3.8499999999999996 THEN 
 'Start of a complex loop
 IF row.item("PetalLength") is Nothing THEN 
-score = score + -6.755419873068633E-4
+score = score + -8.046704774535825E-4
  END IF
-IF row.item("PetalLength") <3.6 THEN 
-'Start of a complex loop
-IF row.item("SepalWidth") is Nothing THEN 
-score = score + -8.777807092727283E-4
+IF row.item("PetalLength") <1.45 THEN 
+score = score + -9.69784615384617E-4
  END IF
-IF row.item("SepalWidth") <3.25 THEN 
-score = score + -0.001099970626666668
- END IF
-IF row.item("SepalWidth") >=3.25 THEN 
-score = score + -6.72682323986015E-4
+IF row.item("PetalLength") >=1.45 THEN 
+score = score + -7.037673931623947E-4
  END IF
 'End of a complex loop
  END IF
-IF row.item("PetalLength") >=3.6 THEN 
-score = score + -2.1590852829353376E-4
- END IF
-'End of a complex loop
- END IF
-IF row.item("PetalLength") >=4.25 THEN 
+IF row.item("PetalLength") >=3.8499999999999996 THEN 
 'Start of a complex loop
 IF row.item("PetalLength") is Nothing THEN 
-score = score + 6.172651787243316E-4
+score = score + 3.736293478260855E-4
  END IF
-IF row.item("PetalLength") <5.25 THEN 
+IF row.item("PetalLength") <5.15 THEN 
 'Start of a complex loop
 IF row.item("SepalWidth") is Nothing THEN 
-score = score + 4.147356641394619E-4
+score = score + 1.1316133333333187E-4
  END IF
-IF row.item("SepalWidth") <2.8499999999999996 THEN 
-score = score + 2.562893014603518E-4
+IF row.item("SepalWidth") <2.75 THEN 
+score = score + -1.5336600000000146E-4
  END IF
-IF row.item("SepalWidth") >=2.8499999999999996 THEN 
-score = score + 5.844996241527943E-4
- END IF
-'End of a complex loop
- END IF
-IF row.item("PetalLength") >=5.25 THEN 
-score = score + 0.001204600771020454
+IF row.item("SepalWidth") >=2.75 THEN 
+score = score + 2.464249999999985E-4
  END IF
 'End of a complex loop
  END IF
-Tree #4
+IF row.item("PetalLength") >=5.15 THEN 
+score = score + 8.620068749999984E-4
+ END IF
+'End of a complex loop
+ END IF
+'  Tree #3
 IF row.item("PetalLength") is Nothing THEN 
-score = score + -4.318117440793552E-5
+score = score + -4.978708994005814E-5
  END IF
-IF row.item("PetalLength") <4.25 THEN 
+IF row.item("PetalLength") <4.300000000000001 THEN 
 'Start of a complex loop
 IF row.item("PetalLength") is Nothing THEN 
-score = score + -6.165173812306542E-4
+score = score + -6.301399948453408E-4
  END IF
 IF row.item("PetalLength") <3.4 THEN 
 'Start of a complex loop
 IF row.item("SepalWidth") is Nothing THEN 
-score = score + -8.255859266215102E-4
+score = score + -7.740157688089341E-4
  END IF
-IF row.item("SepalWidth") <3.3499999999999996 THEN 
-score = score + -0.0010206014277481562
+IF row.item("SepalWidth") <3.25 THEN 
+score = score + -0.001071457223995728
  END IF
-IF row.item("SepalWidth") >=3.3499999999999996 THEN 
-score = score + -7.037012384173564E-4
+IF row.item("SepalWidth") >=3.25 THEN 
+'Start of a complex loop
+IF row.item("SepalWidth") is Nothing THEN 
+score = score + -6.323769806247465E-4
+ END IF
+IF row.item("SepalWidth") <3.55 THEN 
+score = score + -7.118895180256424E-4
+ END IF
+IF row.item("SepalWidth") >=3.55 THEN 
+score = score + -5.600928557148411E-4
+ END IF
+'End of a complex loop
  END IF
 'End of a complex loop
  END IF
 IF row.item("PetalLength") >=3.4 THEN 
-score = score + -2.2824722550477856E-4
- END IF
-'End of a complex loop
- END IF
-IF row.item("PetalLength") >=4.25 THEN 
-'Start of a complex loop
-IF row.item("PetalLength") is Nothing THEN 
-score = score + 6.120602048180286E-4
- END IF
-IF row.item("PetalLength") <5.4 THEN 
-'Start of a complex loop
-IF row.item("PetalLength") is Nothing THEN 
-score = score + 4.2755803564234154E-4
- END IF
-IF row.item("PetalLength") <4.95 THEN 
-score = score + 3.3429634038347486E-4
- END IF
-IF row.item("PetalLength") >=4.95 THEN 
-score = score + 5.462547386990809E-4
- END IF
-'End of a complex loop
- END IF
-IF row.item("PetalLength") >=5.4 THEN 
-score = score + 0.0010733156277572466
- END IF
-'End of a complex loop
- END IF
-Tree #5
-IF row.item("PetalLength") is Nothing THEN 
-score = score + -7.450541325283761E-6
- END IF
-IF row.item("PetalLength") <4.15 THEN 
-'Start of a complex loop
-IF row.item("PetalLength") is Nothing THEN 
-score = score + -7.05366290047346E-4
- END IF
-IF row.item("PetalLength") <1.65 THEN 
-'Start of a complex loop
-IF row.item("SepalWidth") is Nothing THEN 
-score = score + -9.249426318777394E-4
- END IF
-IF row.item("SepalWidth") <3.3 THEN 
-score = score + -0.001189431310802729
- END IF
-IF row.item("SepalWidth") >=3.3 THEN 
-score = score + -6.604539529527496E-4
- END IF
-'End of a complex loop
- END IF
-IF row.item("PetalLength") >=1.65 THEN 
-score = score + -3.9168580171821256E-4
- END IF
-'End of a complex loop
- END IF
-IF row.item("PetalLength") >=4.15 THEN 
-'Start of a complex loop
-IF row.item("PetalLength") is Nothing THEN 
-score = score + 5.713088600539873E-4
- END IF
-IF row.item("PetalLength") <5.35 THEN 
-'Start of a complex loop
-IF row.item("PetalLength") is Nothing THEN 
-score = score + 2.953750210404857E-4
- END IF
-IF row.item("PetalLength") <4.55 THEN 
-score = score + 1.46529796687084E-4
- END IF
-IF row.item("PetalLength") >=4.55 THEN 
-score = score + 4.123248401753013E-4
- END IF
-'End of a complex loop
- END IF
-IF row.item("PetalLength") >=5.35 THEN 
-score = score + 0.0010024554835125837
- END IF
-'End of a complex loop
- END IF
-Tree #6
-IF row.item("PetalLength") is Nothing THEN 
-score = score + 6.183866256026723E-5
- END IF
-IF row.item("PetalLength") <4.300000000000001 THEN 
-'Start of a complex loop
-IF row.item("PetalWidth") is Nothing THEN 
-score = score + -6.487765260316953E-4
- END IF
-IF row.item("PetalWidth") <0.35 THEN 
-'Start of a complex loop
-IF row.item("PetalLength") is Nothing THEN 
-score = score + -7.941339407549173E-4
- END IF
-IF row.item("PetalLength") <1.45 THEN 
-score = score + -7.493224142691953E-4
- END IF
-IF row.item("PetalLength") >=1.45 THEN 
-score = score + -8.389454672406391E-4
- END IF
-'End of a complex loop
- END IF
-IF row.item("PetalWidth") >=0.35 THEN 
-score = score + -4.4112307642709254E-4
+score = score + -2.24671904584305E-4
  END IF
 'End of a complex loop
  END IF
 IF row.item("PetalLength") >=4.300000000000001 THEN 
 'Start of a complex loop
 IF row.item("PetalLength") is Nothing THEN 
-score = score + 6.511293067584801E-4
- END IF
-IF row.item("PetalLength") <5.65 THEN 
-'Start of a complex loop
-IF row.item("SepalWidth") is Nothing THEN 
-score = score + 4.12488491266256E-4
- END IF
-IF row.item("SepalWidth") <2.8499999999999996 THEN 
-score = score + 3.0115085537303345E-4
- END IF
-IF row.item("SepalWidth") >=2.8499999999999996 THEN 
-score = score + 4.928990060780278E-4
- END IF
-'End of a complex loop
- END IF
-IF row.item("PetalLength") >=5.65 THEN 
-score = score + 0.001390915834784375
- END IF
-'End of a complex loop
- END IF
-Tree #7
-IF row.item("PetalLength") is Nothing THEN 
-score = score + -2.4551129013792565E-5
- END IF
-IF row.item("PetalLength") <3.95 THEN 
-'Start of a complex loop
-IF row.item("PetalWidth") is Nothing THEN 
-score = score + -6.983959385687504E-4
- END IF
-IF row.item("PetalWidth") <0.35 THEN 
-score = score + -8.488069847699083E-4
- END IF
-IF row.item("PetalWidth") >=0.35 THEN 
-score = score + -4.7856440950551935E-4
- END IF
-'End of a complex loop
- END IF
-IF row.item("PetalLength") >=3.95 THEN 
-'Start of a complex loop
-IF row.item("PetalLength") is Nothing THEN 
-score = score + 4.769147757712923E-4
+score = score + 6.888438799393926E-4
  END IF
 IF row.item("PetalLength") <5.45 THEN 
-'Start of a complex loop
-IF row.item("SepalWidth") is Nothing THEN 
-score = score + 2.3885082373986658E-4
- END IF
-IF row.item("SepalWidth") <2.8499999999999996 THEN 
-score = score + 4.155509814483414E-5
- END IF
-IF row.item("SepalWidth") >=2.8499999999999996 THEN 
-score = score + 4.0132965658283445E-4
- END IF
-'End of a complex loop
+score = score + 4.297782175921037E-4
  END IF
 IF row.item("PetalLength") >=5.45 THEN 
-score = score + 0.0010919133185191424
+score = score + 0.001040432993124999
  END IF
 'End of a complex loop
  END IF
-Tree #8
+'  Tree #4
 IF row.item("PetalLength") is Nothing THEN 
-score = score + -4.504770531690336E-6
+score = score + -4.4561001390977234E-5
  END IF
-IF row.item("PetalLength") <4.25 THEN 
+IF row.item("PetalLength") <4.05 THEN 
 'Start of a complex loop
 IF row.item("PetalWidth") is Nothing THEN 
-score = score + -6.29074067759769E-4
+score = score + -7.294510053797361E-4
  END IF
 IF row.item("PetalWidth") <0.35 THEN 
 'Start of a complex loop
-IF row.item("PetalLength") is Nothing THEN 
-score = score + -9.275337276116975E-4
+IF row.item("SepalWidth") is Nothing THEN 
+score = score + -9.02648391873337E-4
  END IF
-IF row.item("PetalLength") <1.45 THEN 
-score = score + -0.0010374908494972907
+IF row.item("SepalWidth") <3.3499999999999996 THEN 
+score = score + -0.001110282904713269
  END IF
-IF row.item("PetalLength") >=1.45 THEN 
-score = score + -8.175766057261041E-4
+IF row.item("SepalWidth") >=3.3499999999999996 THEN 
+score = score + -7.13889743837035E-4
  END IF
 'End of a complex loop
  END IF
 IF row.item("PetalWidth") >=0.35 THEN 
+score = score + -4.496706118131503E-4
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("PetalLength") >=4.05 THEN 
+'Start of a complex loop
+IF row.item("PetalWidth") is Nothing THEN 
+score = score + 5.233965628923839E-4
+ END IF
+IF row.item("PetalWidth") <1.95 THEN 
 'Start of a complex loop
 IF row.item("PetalLength") is Nothing THEN 
-score = score + -3.3061440790784055E-4
+score = score + 3.409013218718484E-4
  END IF
-IF row.item("PetalLength") <3.75 THEN 
-score = score + -4.4947659514806996E-4
+IF row.item("PetalLength") <4.65 THEN 
+score = score + 2.660400691190594E-4
  END IF
-IF row.item("PetalLength") >=3.75 THEN 
-score = score + -2.117522206676111E-4
- END IF
-'End of a complex loop
+IF row.item("PetalLength") >=4.65 THEN 
+score = score + 3.8493735290290077E-4
  END IF
 'End of a complex loop
  END IF
-IF row.item("PetalLength") >=4.25 THEN 
-'Start of a complex loop
+IF row.item("PetalWidth") >=1.95 THEN 
+score = score + 8.753516705748454E-4
+ END IF
+'End of a complex loop
+ END IF
+'  Tree #5
 IF row.item("PetalLength") is Nothing THEN 
-score = score + 7.092887120146854E-4
- END IF
-IF row.item("PetalLength") <5.300000000000001 THEN 
-'Start of a complex loop
-IF row.item("SepalWidth") is Nothing THEN 
-score = score + 4.3508460749047917E-4
- END IF
-IF row.item("SepalWidth") <2.95 THEN 
-score = score + 2.047483467679431E-4
- END IF
-IF row.item("SepalWidth") >=2.95 THEN 
-score = score + 6.444812081473301E-4
- END IF
-'End of a complex loop
- END IF
-IF row.item("PetalLength") >=5.300000000000001 THEN 
-score = score + 0.0011205948688009946
- END IF
-'End of a complex loop
- END IF
-Tree #9
-IF row.item("PetalLength") is Nothing THEN 
-score = score + 1.8977057960305786E-5
- END IF
-IF row.item("PetalLength") <4.55 THEN 
-'Start of a complex loop
-IF row.item("PetalLength") is Nothing THEN 
-score = score + -5.419642631700535E-4
- END IF
-IF row.item("PetalLength") <3.4 THEN 
-'Start of a complex loop
-IF row.item("SepalWidth") is Nothing THEN 
-score = score + -8.49564299092005E-4
- END IF
-IF row.item("SepalWidth") <3.3499999999999996 THEN 
-score = score + -0.0010764864803862093
- END IF
-IF row.item("SepalWidth") >=3.3499999999999996 THEN 
-score = score + -6.874770267390018E-4
- END IF
-'End of a complex loop
- END IF
-IF row.item("PetalLength") >=3.4 THEN 
-score = score + -1.0770538892729868E-4
- END IF
-'End of a complex loop
- END IF
-IF row.item("PetalLength") >=4.55 THEN 
-'Start of a complex loop
-IF row.item("SepalWidth") is Nothing THEN 
-score = score + 6.954062981469156E-4
- END IF
-IF row.item("SepalWidth") <2.8499999999999996 THEN 
-score = score + 4.3432583770194606E-4
- END IF
-IF row.item("SepalWidth") >=2.8499999999999996 THEN 
-score = score + 9.274778185424439E-4
- END IF
-'End of a complex loop
- END IF
-Tree #10
-IF row.item("PetalLength") is Nothing THEN 
-score = score + -5.120996106963124E-5
- END IF
-IF row.item("PetalLength") <5.15 THEN 
-'Start of a complex loop
-IF row.item("PetalLength") is Nothing THEN 
-score = score + -4.192410891685735E-4
+score = score + -6.713859999286796E-5
  END IF
 IF row.item("PetalLength") <3.95 THEN 
 'Start of a complex loop
-IF row.item("SepalWidth") is Nothing THEN 
-score = score + -7.638371434591385E-4
+IF row.item("PetalLength") is Nothing THEN 
+score = score + -8.370158340765991E-4
  END IF
-IF row.item("SepalWidth") <3.3499999999999996 THEN 
-score = score + -9.480311627850286E-4
+IF row.item("PetalLength") <1.45 THEN 
+score = score + -9.862475318764801E-4
  END IF
-IF row.item("SepalWidth") >=3.3499999999999996 THEN 
-score = score + -5.681309979253802E-4
+IF row.item("PetalLength") >=1.45 THEN 
+score = score + -6.971111173892106E-4
  END IF
 'End of a complex loop
  END IF
 IF row.item("PetalLength") >=3.95 THEN 
 'Start of a complex loop
 IF row.item("PetalLength") is Nothing THEN 
-score = score + 5.457848548095334E-5
+score = score + 4.752749058388517E-4
  END IF
 IF row.item("PetalLength") <4.6 THEN 
-score = score + -5.173549392785793E-5
+score = score + 1.4995164309897898E-5
  END IF
 IF row.item("PetalLength") >=4.6 THEN 
-score = score + 1.802222793277303E-4
+'Start of a complex loop
+IF row.item("PetalLength") is Nothing THEN 
+score = score + 7.650806690237485E-4
+ END IF
+IF row.item("PetalLength") <5.55 THEN 
+score = score + 5.415607155646841E-4
+ END IF
+IF row.item("PetalLength") >=5.55 THEN 
+score = score + 0.0010444806108475789
  END IF
 'End of a complex loop
  END IF
 'End of a complex loop
- END IF
-IF row.item("PetalLength") >=5.15 THEN 
-score = score + 0.0011142219445770191
  END IF
 Console.WriteLine(" score delta  = "  & CStr(score - row.Item("mdl_pred")))
 Next row

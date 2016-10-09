@@ -2,7 +2,7 @@
 <PMML xmlns="http://www.dmg.org/PMML-4_3" version="4.3">
 	<Header>
 		<Application name="JPMML-R" version="1.2.1"/>
-		<Timestamp>2016-10-09T15:16:54Z</Timestamp>
+		<Timestamp>2016-10-09T15:33:52Z</Timestamp>
 	</Header>
 	<DataDictionary>
 		<DataField name="Survived" optype="categorical" dataType="integer">
@@ -51,30 +51,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-4.568448197302679E-5">
+									<Node id="10" score="2.0826749134765987E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-8.169033389988453E-4">
+										<Node id="5" score="-7.950487821065883E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="-1.3414308109224908E-4">
+										<Node id="3" score="-2.135461604832017E-6">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-0.001029517278960987">
+										<Node id="4" score="-0.0010055567433017447">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0015337294786483412">
+										<Node id="9" score="0.0014883764468393403">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.002248666798340909">
+										<Node id="7" score="0.0023169758412424557">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="5.91827930481942E-4">
+										<Node id="8" score="4.6138001433970456E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -87,35 +87,34 @@
 								<MiningSchema>
 									<MiningField name="Pclass"/>
 									<MiningField name="Sex"/>
-									<MiningField name="Age"/>
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-1.5045093108400902E-4">
+									<Node id="10" score="4.8900705907514425E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2" score="-8.986348614768933E-4">
+									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-									</Node>
-									<Node id="3">
-										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0013662756761070082">
+										<Node id="5" score="-7.826923504550548E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="4" score="0.0023876822852678865">
+										<Node id="3" score="2.989669084604743E-4">
+											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
+										</Node>
+										<Node id="4" score="-0.001044768382350888">
+											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
+										</Node>
+									</Node>
+									<Node id="6">
+										<SimplePredicate field="Sex" operator="equal" value="female"/>
+										<Node id="9" score="0.0014876077113936772">
+											<SimplePredicate field="Pclass" operator="isMissing"/>
+										</Node>
+										<Node id="7" score="0.0024157923288696615">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="5">
+										<Node id="8" score="3.1448548652819694E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
-											<Node id="8" score="1.796415272289287E-4">
-												<SimplePredicate field="Age" operator="isMissing"/>
-											</Node>
-											<Node id="6" score="5.717975302225236E-4">
-												<SimplePredicate field="Age" operator="lessThan" value="27.5"/>
-											</Node>
-											<Node id="7" score="-0.0010948654825002548">
-												<SimplePredicate field="Age" operator="greaterOrEqual" value="27.5"/>
-											</Node>
 										</Node>
 									</Node>
 								</Node>
@@ -130,30 +129,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-8.425755190480405E-5">
+									<Node id="10" score="1.2053911647824586E-6">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-9.000973668878945E-4">
+										<Node id="5" score="-7.732224449297021E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="8.200865491906824E-5">
+										<Node id="3" score="1.570421339231004E-4">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-0.0011912526919368612">
+										<Node id="4" score="-9.969569638943001E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0014883810388191794">
+										<Node id="9" score="0.0015090317740242426">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.002383980428250711">
+										<Node id="7" score="0.0023782765040224383">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="5.19170740667248E-4">
+										<Node id="8" score="6.045473928099036E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -166,34 +165,35 @@
 								<MiningSchema>
 									<MiningField name="Pclass"/>
 									<MiningField name="Sex"/>
+									<MiningField name="Age"/>
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="2.941131314459955E-5">
+									<Node id="10" score="2.0952460685761542E-4">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2">
+									<Node id="2" score="-6.896926614895295E-4">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-7.190546442743705E-4">
-											<SimplePredicate field="Pclass" operator="isMissing"/>
-										</Node>
-										<Node id="3" score="-1.3322186891238631E-4">
-											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
-										</Node>
-										<Node id="4" score="-9.12515700324142E-4">
-											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
-										</Node>
 									</Node>
-									<Node id="6">
+									<Node id="3">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0013757085698856402">
+										<Node id="9" score="0.001826984598978895">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.00233973358823146">
+										<Node id="4" score="0.002593888550467562">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="3.22891773534284E-4">
+										<Node id="5">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
+											<Node id="8" score="8.519210035147327E-4">
+												<SimplePredicate field="Age" operator="isMissing"/>
+											</Node>
+											<Node id="6" score="0.0013198948006873283">
+												<SimplePredicate field="Age" operator="lessThan" value="27.5"/>
+											</Node>
+											<Node id="7" score="-0.0010199741851756505">
+												<SimplePredicate field="Age" operator="greaterOrEqual" value="27.5"/>
+											</Node>
 										</Node>
 									</Node>
 								</Node>
@@ -208,30 +208,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-8.490919454000037E-5">
+									<Node id="10" score="-2.8324293929438353E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-8.8885568107013E-4">
+										<Node id="5" score="-8.583301117391011E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="-5.334942187263983E-5">
+										<Node id="3" score="-1.5911119531556665E-4">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-0.0011170556285161407">
+										<Node id="4" score="-0.0010085754987391993">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0014044532067882527">
+										<Node id="9" score="0.0015877135235277857">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.002376681719241334">
+										<Node id="7" score="0.0023415956864973365">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="4.0697200570002706E-4">
+										<Node id="8" score="6.168046772791218E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -247,30 +247,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-7.569513456211568E-5">
+									<Node id="10" score="-3.82775014900333E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-8.40369250631251E-4">
+										<Node id="5" score="-8.660814027917626E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="-9.69096309511998E-5">
+										<Node id="3" score="-7.221741082412963E-5">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-0.001035847857529885">
+										<Node id="4" score="-0.0010768417546415767">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.001398314839176415">
+										<Node id="9" score="0.0014507282580841466">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.0023325063383565444">
+										<Node id="7" score="0.002429873100364882">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="2.745772387133608E-4">
+										<Node id="8" score="4.339239987926137E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -286,30 +286,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-4.737420098273007E-5">
+									<Node id="10" score="-6.660419416228601E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-8.135915733611209E-4">
+										<Node id="5" score="-7.764905199888215E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="-2.7480020584875565E-5">
+										<Node id="3" score="3.860455676238767E-5">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-0.001019397602199537">
+										<Node id="4" score="-9.707259425337907E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0014444662458996996">
+										<Node id="9" score="0.0012748043825618817">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.002223052348185662">
+										<Node id="7" score="0.002249490017563105">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="5.1919000840044E-4">
+										<Node id="8" score="3.2511068691966425E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -322,34 +322,35 @@
 								<MiningSchema>
 									<MiningField name="Pclass"/>
 									<MiningField name="Sex"/>
+									<MiningField name="SibSp"/>
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-1.3312577401789125E-4">
+									<Node id="10" score="-2.971987698613484E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2">
+									<Node id="2" score="-9.164952056214442E-4">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-8.849840529406329E-4">
-											<SimplePredicate field="Pclass" operator="isMissing"/>
-										</Node>
-										<Node id="3" score="1.2795405905055012E-4">
-											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
-										</Node>
-										<Node id="4" score="-0.0011339264702943982">
-											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
-										</Node>
 									</Node>
-									<Node id="6">
+									<Node id="3">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.001330757232626387">
+										<Node id="9" score="0.0016130882638831238">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.002363295729919369">
+										<Node id="4" score="0.0023849774603872708">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="2.2749692045032446E-4">
+										<Node id="5">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
+											<Node id="8" score="6.39836668290939E-4">
+												<SimplePredicate field="SibSp" operator="isMissing"/>
+											</Node>
+											<Node id="6" score="9.685301078710433E-4">
+												<SimplePredicate field="SibSp" operator="lessThan" value="2.5"/>
+											</Node>
+											<Node id="7" score="-9.214571697145562E-4">
+												<SimplePredicate field="SibSp" operator="greaterOrEqual" value="2.5"/>
+											</Node>
 										</Node>
 									</Node>
 								</Node>
@@ -364,30 +365,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-5.7646213060050055E-5">
+									<Node id="10" score="-5.81645156869799E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-9.008980881922991E-4">
+										<Node id="5" score="-8.308124767793295E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="-9.093610936423259E-5">
+										<Node id="3" score="-2.3331021692852812E-4">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-0.0011042651651274847">
+										<Node id="4" score="-0.0010103310929676867">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0015045319402298217">
+										<Node id="9" score="0.001387434895389029">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.00241770830953547">
+										<Node id="7" score="0.0023181784840893786">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="5.432936567501918E-4">
+										<Node id="8" score="3.4194209712288284E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -403,30 +404,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="4.617727587596007E-5">
+									<Node id="10" score="1.126342083357469E-4">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-7.772715635988384E-4">
+										<Node id="5" score="-7.366802744032445E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="2.4162327888304342E-4">
+										<Node id="3" score="-1.4656831414698837E-5">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-0.0010409329482761675">
+										<Node id="4" score="-8.852447688453321E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0015419356108713218">
+										<Node id="9" score="0.0017497996257207764">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.0024249979694357334">
+										<Node id="7" score="0.002469840115488858">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="4.8716668258605244E-4">
+										<Node id="8" score="8.836639641156928E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -442,30 +443,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="7.388008916596971E-5">
+									<Node id="10" score="-2.1198227456853397E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-7.126374050486476E-4">
+										<Node id="5" score="-8.242571295914135E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="1.9016733331986052E-4">
+										<Node id="3" score="6.995340805835215E-5">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-9.796641586506006E-4">
+										<Node id="4" score="-0.001084901456709058">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0013583701980608477">
+										<Node id="9" score="0.0014519289305989001">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.002152029190872541">
+										<Node id="7" score="0.002314018293147501">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="4.32434706447205E-4">
+										<Node id="8" score="4.849908617943876E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -481,30 +482,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="8.276578320992772E-5">
+									<Node id="10" score="-4.9813699326430687E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-8.0296035943864E-4">
+										<Node id="5" score="-8.529861762514543E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="1.228418714039934E-4">
+										<Node id="3" score="-3.1576795857855264E-4">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-0.0010645098686004602">
+										<Node id="4" score="-0.0010190354435321693">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0016759587190432004">
+										<Node id="9" score="0.0014235217997462242">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.0024722211596031065">
+										<Node id="7" score="0.0024041150311714912">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="6.10372217705679E-4">
+										<Node id="8" score="4.303568602257612E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -517,35 +518,34 @@
 								<MiningSchema>
 									<MiningField name="Pclass"/>
 									<MiningField name="Sex"/>
-									<MiningField name="SibSp"/>
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="3.6472710708532565E-5">
+									<Node id="10" score="1.2985679641378068E-4">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2" score="-7.718584698733972E-4">
+									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-									</Node>
-									<Node id="3">
-										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0016422849889115606">
+										<Node id="5" score="-7.375984359976923E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="4" score="0.002355798350178455">
+										<Node id="3" score="-1.0368647847285642E-5">
+											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
+										</Node>
+										<Node id="4" score="-9.403217840219206E-4">
+											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
+										</Node>
+									</Node>
+									<Node id="6">
+										<SimplePredicate field="Sex" operator="equal" value="female"/>
+										<Node id="9" score="0.0017368732205606762">
+											<SimplePredicate field="Pclass" operator="isMissing"/>
+										</Node>
+										<Node id="7" score="0.0023212825362686324">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="5">
+										<Node id="8" score="9.80578811997439E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
-											<Node id="8" score="7.690298303461083E-4">
-												<SimplePredicate field="SibSp" operator="isMissing"/>
-											</Node>
-											<Node id="6" score="0.0011641511000096841">
-												<SimplePredicate field="SibSp" operator="lessThan" value="2.5"/>
-											</Node>
-											<Node id="7" score="-0.0012424966333957313">
-												<SimplePredicate field="SibSp" operator="greaterOrEqual" value="2.5"/>
-											</Node>
 										</Node>
 									</Node>
 								</Node>
@@ -560,30 +560,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-1.2182892193178186E-5">
+									<Node id="10" score="-3.0799084825022855E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-8.156063104061435E-4">
+										<Node id="5" score="-7.578137252997223E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="1.5223974775469953E-5">
+										<Node id="3" score="-3.5537079668506786E-5">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-0.0010405472609793314">
+										<Node id="4" score="-9.570624551290231E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.001505974346118334">
+										<Node id="9" score="0.001413471610346192">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.002405293338414535">
+										<Node id="7" score="0.0022837045982160367">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="4.54657777659395E-4">
+										<Node id="8" score="4.828057760964968E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -599,30 +599,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="1.5619830116689266E-5">
+									<Node id="10" score="-4.1199072595167456E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-8.036664575188334E-4">
+										<Node id="5" score="-8.011999483416364E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="-1.416964768395503E-4">
+										<Node id="3" score="-4.446384823785311E-5">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-9.786364964648995E-4">
+										<Node id="4" score="-9.978846615844698E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0015038170741128603">
+										<Node id="9" score="0.0013258465278041414">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.0022671680700393415">
+										<Node id="7" score="0.0022380489778379103">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="5.441758220909984E-4">
+										<Node id="8" score="4.020972113142488E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -638,30 +638,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="2.5357697223008597E-5">
+									<Node id="10" score="-4.164643117879164E-6">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-7.388019177741016E-4">
+										<Node id="5" score="-7.945728489238969E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="1.4568526126284767E-4">
+										<Node id="3" score="-3.545774103522581E-5">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-0.001004544702507176">
+										<Node id="4" score="-0.0010104989240566744">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0014550756865724403">
+										<Node id="9" score="0.0014601172253304487">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.002290863064262471">
+										<Node id="7" score="0.002260043032803376">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="5.402273407225424E-4">
+										<Node id="8" score="4.515151202558878E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -677,30 +677,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-4.1351456332521084E-5">
+									<Node id="10" score="-5.9884030982016606E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-7.988298799231526E-4">
+										<Node id="5" score="-7.814037258345062E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="2.2784646943808248E-5">
+										<Node id="3" score="-1.2873466851972106E-4">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-9.86033189842207E-4">
+										<Node id="4" score="-9.686674216041491E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.001389987642790036">
+										<Node id="9" score="0.0015119981613751928">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.002200965797545432">
+										<Node id="7" score="0.0023824868212900044">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="3.909565825841131E-4">
+										<Node id="8" score="4.4806757703486755E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -716,30 +716,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-3.1171151029937726E-5">
+									<Node id="10" score="-1.3465785985215845E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-8.019080871201788E-4">
+										<Node id="5" score="-8.015033607336155E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="-1.6599051332614022E-4">
+										<Node id="3" score="-1.7060958707584527E-5">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-9.73549556153083E-4">
+										<Node id="4" score="-9.959378022614351E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0013688383468048672">
+										<Node id="9" score="0.0014905013501359129">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.0022518285462240907">
+										<Node id="7" score="0.0023326315688236964">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="6.295907379887734E-4">
+										<Node id="8" score="5.676189186972461E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -755,30 +755,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-4.1268677253332834E-5">
+									<Node id="10" score="2.1636588317279588E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-7.455298606229709E-4">
+										<Node id="5" score="-7.876551871330245E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="-2.715045025497984E-5">
+										<Node id="3" score="-4.4240466276465474E-5">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-9.344141021421409E-4">
+										<Node id="4" score="-9.888545840620933E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0013162874196368248">
+										<Node id="9" score="0.0013560045752204597">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.002324580044118751">
+										<Node id="7" score="0.0022794846532667523">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="2.534924911288487E-4">
+										<Node id="8" score="9.43486939459477E-5">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -794,30 +794,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="6.164269782224171E-5">
+									<Node id="10" score="-4.3843090917687855E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-7.301837841485358E-4">
+										<Node id="5" score="-8.171929578753022E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="3.51938933055527E-4">
+										<Node id="3" score="-4.3126523974594446E-5">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-0.0010149529202548681">
+										<Node id="4" score="-0.001058413660532732">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0015141651615648145">
+										<Node id="9" score="0.0012940996236960988">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.0023364482914152575">
+										<Node id="7" score="0.0022395475317783255">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="5.679763546136198E-4">
+										<Node id="8" score="2.638038264270062E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -830,34 +830,35 @@
 								<MiningSchema>
 									<MiningField name="Pclass"/>
 									<MiningField name="Sex"/>
+									<MiningField name="SibSp"/>
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="8.925401963974873E-5">
+									<Node id="10" score="4.3613244209448024E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2">
+									<Node id="2" score="-7.58147705628585E-4">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-7.053326336960231E-4">
-											<SimplePredicate field="Pclass" operator="isMissing"/>
-										</Node>
-										<Node id="3" score="-1.0964839132469345E-5">
-											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
-										</Node>
-										<Node id="4" score="-9.023829537748695E-4">
-											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
-										</Node>
 									</Node>
-									<Node id="6">
+									<Node id="3">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0015046114958940922">
+										<Node id="9" score="0.0015891129698840775">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.0023879360501040422">
+										<Node id="4" score="0.00242294232633633">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="4.518822326575762E-4">
+										<Node id="5">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
+											<Node id="8" score="7.330481639264317E-4">
+												<SimplePredicate field="SibSp" operator="isMissing"/>
+											</Node>
+											<Node id="6" score="0.0011589842201924303">
+												<SimplePredicate field="SibSp" operator="lessThan" value="1.5"/>
+											</Node>
+											<Node id="7" score="-8.375910435544382E-4">
+												<SimplePredicate field="SibSp" operator="greaterOrEqual" value="1.5"/>
+											</Node>
 										</Node>
 									</Node>
 								</Node>
@@ -869,35 +870,34 @@
 								<MiningSchema>
 									<MiningField name="Pclass"/>
 									<MiningField name="Sex"/>
-									<MiningField name="Age"/>
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-4.274737641002224E-5">
+									<Node id="10" score="7.079843945037294E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2" score="-9.073198422262524E-4">
+									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-									</Node>
-									<Node id="3">
-										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.001558928537826455">
+										<Node id="5" score="-6.715694225472522E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="4" score="0.0023168010939428234">
+										<Node id="3" score="1.1295648013364181E-4">
+											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
+										</Node>
+										<Node id="4" score="-8.778456297176597E-4">
+											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
+										</Node>
+									</Node>
+									<Node id="6">
+										<SimplePredicate field="Sex" operator="equal" value="female"/>
+										<Node id="9" score="0.0015018101734326373">
+											<SimplePredicate field="Pclass" operator="isMissing"/>
+										</Node>
+										<Node id="7" score="0.002275972607982504">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="5">
+										<Node id="8" score="5.705713028871458E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
-											<Node id="8" score="7.81370980252519E-4">
-												<SimplePredicate field="Age" operator="isMissing"/>
-											</Node>
-											<Node id="6" score="0.001604613583517719">
-												<SimplePredicate field="Age" operator="lessThan" value="6.5"/>
-											</Node>
-											<Node id="7" score="2.5589697816834876E-4">
-												<SimplePredicate field="Age" operator="greaterOrEqual" value="6.5"/>
-											</Node>
 										</Node>
 									</Node>
 								</Node>
@@ -909,35 +909,34 @@
 								<MiningSchema>
 									<MiningField name="Pclass"/>
 									<MiningField name="Sex"/>
-									<MiningField name="SibSp"/>
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-6.057397825597856E-6">
+									<Node id="10" score="5.13382370345108E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2" score="-8.493397437079491E-4">
+									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-									</Node>
-									<Node id="3">
-										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0014814717091966862">
+										<Node id="5" score="-6.824482151554802E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="4" score="0.0022819825947455667">
+										<Node id="3" score="1.8220145657626402E-4">
+											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
+										</Node>
+										<Node id="4" score="-9.107756176474128E-4">
+											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
+										</Node>
+									</Node>
+									<Node id="6">
+										<SimplePredicate field="Sex" operator="equal" value="female"/>
+										<Node id="9" score="0.001451767283044167">
+											<SimplePredicate field="Pclass" operator="isMissing"/>
+										</Node>
+										<Node id="7" score="0.0022726184616998894">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="5">
+										<Node id="8" score="4.784723140666678E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
-											<Node id="8" score="5.635525604339698E-4">
-												<SimplePredicate field="SibSp" operator="isMissing"/>
-											</Node>
-											<Node id="6" score="9.284786776913251E-4">
-												<SimplePredicate field="SibSp" operator="lessThan" value="1.5"/>
-											</Node>
-											<Node id="7" score="-0.0010264826647587927">
-												<SimplePredicate field="SibSp" operator="greaterOrEqual" value="1.5"/>
-											</Node>
 										</Node>
 									</Node>
 								</Node>
@@ -949,34 +948,35 @@
 								<MiningSchema>
 									<MiningField name="Pclass"/>
 									<MiningField name="Sex"/>
+									<MiningField name="Age"/>
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-4.376750279880128E-5">
+									<Node id="10" score="-1.1982213788510704E-4">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2">
+									<Node id="2" score="-8.372381225012354E-4">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-8.413829137960142E-4">
-											<SimplePredicate field="Pclass" operator="isMissing"/>
-										</Node>
-										<Node id="3" score="-2.5408283083936566E-4">
-											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
-										</Node>
-										<Node id="4" score="-0.0010095525410743498">
-											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
-										</Node>
 									</Node>
-									<Node id="6">
+									<Node id="3">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.001478478902503069">
+										<Node id="9" score="0.0013053800865872017">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.0023152143237564304">
+										<Node id="4" score="0.0022260408307960768">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="5.371515535930378E-4">
+										<Node id="5">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
+											<Node id="8" score="8.262753568478981E-5">
+												<SimplePredicate field="Age" operator="isMissing"/>
+											</Node>
+											<Node id="6" score="4.776556488845963E-4">
+												<SimplePredicate field="Age" operator="lessThan" value="27.5"/>
+											</Node>
+											<Node id="7" score="-0.0011024568039146297">
+												<SimplePredicate field="Age" operator="greaterOrEqual" value="27.5"/>
+											</Node>
 										</Node>
 									</Node>
 								</Node>
@@ -991,30 +991,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="6.749761503442566E-5">
+									<Node id="10" score="3.156554551279388E-6">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-8.712378613378951E-4">
+										<Node id="5" score="-7.455097660135176E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="-5.119714029276588E-5">
+										<Node id="3" score="3.943024707479186E-4">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-0.0011033955083917673">
+										<Node id="4" score="-0.0010632450355532099">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0016759407178430971">
+										<Node id="9" score="0.0013901089048283712">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.002286011490849054">
+										<Node id="7" score="0.002204368203530195">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="9.339627506736904E-4">
+										<Node id="8" score="5.329938535632944E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -1027,34 +1027,34 @@
 								<MiningSchema>
 									<MiningField name="Pclass"/>
 									<MiningField name="Sex"/>
-									<MiningField name="SibSp"/>
+									<MiningField name="Age"/>
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="6.884111609896052E-5">
+									<Node id="10" score="1.2409385292820961E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2" score="-7.333919011617475E-4">
+									<Node id="2" score="-7.461049250107486E-4">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
 									</Node>
 									<Node id="3">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0014433989078688322">
+										<Node id="9" score="0.0013635130005210541">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="4" score="0.002368955463116867">
+										<Node id="4" score="0.002412446232799475">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
 										<Node id="5">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
-											<Node id="8" score="4.229134751594606E-4">
-												<SimplePredicate field="SibSp" operator="isMissing"/>
+											<Node id="8" score="2.6078832043348316E-4">
+												<SimplePredicate field="Age" operator="isMissing"/>
 											</Node>
-											<Node id="6" score="0.001178940005697843">
-												<SimplePredicate field="SibSp" operator="lessThan" value="0.5"/>
+											<Node id="6" score="0.0011349545044414106">
+												<SimplePredicate field="Age" operator="lessThan" value="6.5"/>
 											</Node>
-											<Node id="7" score="-4.5911747713531893E-4">
-												<SimplePredicate field="SibSp" operator="greaterOrEqual" value="0.5"/>
+											<Node id="7" score="-3.4732728583290116E-4">
+												<SimplePredicate field="Age" operator="greaterOrEqual" value="6.5"/>
 											</Node>
 										</Node>
 									</Node>
@@ -1070,30 +1070,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="4.8920798109531344E-5">
+									<Node id="10" score="-5.435696545418308E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-7.250444293250608E-4">
+										<Node id="5" score="-8.309028699725603E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="-1.2288400520461392E-4">
+										<Node id="3" score="-1.8818379388288838E-4">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-9.045876750490474E-4">
+										<Node id="4" score="-0.0010133340487753055">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0014009711645539115">
+										<Node id="9" score="0.0014575933387074255">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.0022739136246989564">
+										<Node id="7" score="0.002253050507024513">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="3.6287742816520983E-4">
+										<Node id="8" score="5.37135758226224E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -1109,30 +1109,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-8.304968974265956E-5">
+									<Node id="10" score="-5.564406791921809E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-8.799029305048413E-4">
+										<Node id="5" score="-8.557466935993102E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="-2.3270916705243373E-4">
+										<Node id="3" score="-1.6562207911288146E-4">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-0.0010515499721161319">
+										<Node id="4" score="-0.0010538093632277022">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0014226924729962682">
+										<Node id="9" score="0.001397706904043987">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.0023016035465460733">
+										<Node id="7" score="0.0023062214488620766">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="4.4746237768758014E-4">
+										<Node id="8" score="3.92284141111968E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -1148,30 +1148,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-2.7028209256571556E-5">
+									<Node id="10" score="3.247243837433756E-6">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-8.601424135913367E-4">
+										<Node id="5" score="-7.319623972954096E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="-4.366937311531769E-4">
-											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
+										<Node id="3" score="1.8464067434659567E-4">
+											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-0.0011464514659216833">
-											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
+										<Node id="4" score="-0.0010065395288886094">
+											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0016114297259351331">
+										<Node id="9" score="0.001449159538065359">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.002219860788100805">
+										<Node id="7" score="0.0022258298773700376">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="7.478501538290181E-4">
+										<Node id="8" score="6.724891987606805E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -1187,30 +1187,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="2.9836340332732296E-5">
+									<Node id="10" score="-8.058129979138867E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-7.93919537781505E-4">
+										<Node id="5" score="-7.81979015290798E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="4.5497154435678765E-5">
+										<Node id="3" score="-1.2291162047464138E-4">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-0.0010155836859427527">
+										<Node id="4" score="-9.619764130347064E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0016019717417010808">
+										<Node id="9" score="0.0014160631213094635">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.002400360471788588">
+										<Node id="7" score="0.002258844449870498">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="6.553108188830367E-4">
+										<Node id="8" score="6.194615915736909E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -1223,35 +1223,34 @@
 								<MiningSchema>
 									<MiningField name="Pclass"/>
 									<MiningField name="Sex"/>
-									<MiningField name="Age"/>
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="2.1461121746544636E-5">
+									<Node id="10" score="9.602490387320114E-6">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2" score="-7.367019841557152E-4">
+									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-									</Node>
-									<Node id="3">
-										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.001412231659962155">
+										<Node id="5" score="-8.489223472195272E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="4" score="0.00228891938655766">
+										<Node id="3" score="5.910887958937548E-5">
+											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
+										</Node>
+										<Node id="4" score="-0.0011066068845571888">
+											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
+										</Node>
+									</Node>
+									<Node id="6">
+										<SimplePredicate field="Sex" operator="equal" value="female"/>
+										<Node id="9" score="0.001538849857374517">
+											<SimplePredicate field="Pclass" operator="isMissing"/>
+										</Node>
+										<Node id="7" score="0.00224305379865544">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="5">
+										<Node id="8" score="7.985328934638026E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
-											<Node id="8" score="5.013872686940974E-4">
-												<SimplePredicate field="Age" operator="isMissing"/>
-											</Node>
-											<Node id="6" score="7.930298776185488E-4">
-												<SimplePredicate field="Age" operator="lessThan" value="36"/>
-											</Node>
-											<Node id="7" score="-0.0012484683848526105">
-												<SimplePredicate field="Age" operator="greaterOrEqual" value="36"/>
-											</Node>
 										</Node>
 									</Node>
 								</Node>
@@ -1266,30 +1265,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-5.680978764882825E-5">
+									<Node id="10" score="5.722369248183407E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-8.505771372389402E-4">
+										<Node id="5" score="-7.281300075762609E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="-1.59624767443652E-4">
+										<Node id="3" score="4.473223105820347E-5">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-0.0010218388357352082">
+										<Node id="4" score="-9.434021379721619E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0014580926050329539">
+										<Node id="9" score="0.0013899451228834496">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.002257205513886625">
+										<Node id="7" score="0.00218904249875879">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="3.7621666689259916E-4">
+										<Node id="8" score="6.004754262355227E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -1302,35 +1301,34 @@
 								<MiningSchema>
 									<MiningField name="Pclass"/>
 									<MiningField name="Sex"/>
-									<MiningField name="Age"/>
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-1.5012264652342218E-4">
+									<Node id="10" score="3.72629995748425E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2" score="-9.864271695929196E-4">
+									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-									</Node>
-									<Node id="3">
-										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0014946095821799228">
+										<Node id="5" score="-7.282727068253316E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="4" score="0.0023836821281790752">
+										<Node id="3" score="3.276228985956471E-5">
+											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
+										</Node>
+										<Node id="4" score="-9.486629321096456E-4">
+											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
+										</Node>
+									</Node>
+									<Node id="6">
+										<SimplePredicate field="Sex" operator="equal" value="female"/>
+										<Node id="9" score="0.0014008734766001528">
+											<SimplePredicate field="Pclass" operator="isMissing"/>
+										</Node>
+										<Node id="7" score="0.002248458227235638">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="5">
+										<Node id="8" score="4.158425501859402E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
-											<Node id="8" score="5.314476573475077E-4">
-												<SimplePredicate field="Age" operator="isMissing"/>
-											</Node>
-											<Node id="6" score="0.0014784068908947046">
-												<SimplePredicate field="Age" operator="lessThan" value="6.5"/>
-											</Node>
-											<Node id="7" score="8.695658853963975E-5">
-												<SimplePredicate field="Age" operator="greaterOrEqual" value="6.5"/>
-											</Node>
 										</Node>
 									</Node>
 								</Node>
@@ -1342,35 +1340,35 @@
 								<MiningSchema>
 									<MiningField name="Pclass"/>
 									<MiningField name="Sex"/>
-									<MiningField name="Age"/>
+									<MiningField name="SibSp"/>
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-5.52480270608621E-5">
+									<Node id="10" score="-3.0353908015311028E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2" score="-8.482844492189296E-4">
+									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
+										<Node id="5" score="-8.436058394597665E-4">
+											<SimplePredicate field="SibSp" operator="isMissing"/>
+										</Node>
+										<Node id="3" score="-0.001068016368332655">
+											<SimplePredicate field="SibSp" operator="lessThan" value="0.5"/>
+										</Node>
+										<Node id="4" score="-1.7037425284110162E-4">
+											<SimplePredicate field="SibSp" operator="greaterOrEqual" value="0.5"/>
+										</Node>
 									</Node>
-									<Node id="3">
+									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.001458259393005515">
+										<Node id="9" score="0.0014042022940357782">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="4" score="0.0022788648530696403">
+										<Node id="7" score="0.0021670871304182533">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="5">
+										<Node id="8" score="4.1245200673856083E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
-											<Node id="8" score="5.5896573814072E-4">
-												<SimplePredicate field="Age" operator="isMissing"/>
-											</Node>
-											<Node id="6" score="9.066237720800417E-4">
-												<SimplePredicate field="Age" operator="lessThan" value="36.5"/>
-											</Node>
-											<Node id="7" score="-0.001631279875677006">
-												<SimplePredicate field="Age" operator="greaterOrEqual" value="36.5"/>
-											</Node>
 										</Node>
 									</Node>
 								</Node>
@@ -1385,30 +1383,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-1.2986580782585777E-5">
+									<Node id="10" score="-1.9668121398523404E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-9.022321565844407E-4">
+										<Node id="5" score="-8.762511399591562E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="-2.5425144554620333E-4">
+										<Node id="3" score="-4.9636974993217256E-5">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-0.0010721470985900227">
+										<Node id="4" score="-0.0011060721185595518">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0015556205218741025">
+										<Node id="9" score="0.0015061203804126039">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.0023507627323299885">
+										<Node id="7" score="0.0023772220345912756">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="4.4004786839868016E-4">
+										<Node id="8" score="6.775114898524038E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -1424,30 +1422,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="6.002150252989783E-7">
+									<Node id="10" score="-8.414293363660949E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-7.2782275353561E-4">
+										<Node id="5" score="-8.477064199260738E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="-1.3555017441948042E-4">
+										<Node id="3" score="-1.2206740799186579E-4">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-8.850632612655558E-4">
+										<Node id="4" score="-0.0010510104534421235">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0013108453031285693">
+										<Node id="9" score="0.001448143251687518">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.002324130325860961">
+										<Node id="7" score="0.0022586631507584484">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="2.847338877033628E-4">
+										<Node id="8" score="6.154173279845078E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -1463,30 +1461,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-3.9845798970035384E-5">
+									<Node id="10" score="-1.1057267477832626E-4">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-7.949683182369033E-4">
+										<Node id="5" score="-7.836405570271276E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="-7.765451905826947E-5">
+										<Node id="3" score="3.661843902401333E-5">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-9.635677154797445E-4">
+										<Node id="4" score="-0.0010234620431607238">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.001359067073261534">
+										<Node id="9" score="0.0013557537829779907">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.0022939474804491915">
+										<Node id="7" score="0.0022361549868207308">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="5.023450319881418E-5">
+										<Node id="8" score="5.001526130463134E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -1502,30 +1500,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="4.531453784986286E-5">
+									<Node id="10" score="9.182840145097427E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-7.77932445783917E-4">
+										<Node id="5" score="-7.273288007114696E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="1.9749551679140443E-4">
+										<Node id="3" score="4.3099773460800956E-5">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-0.001051052275305007">
+										<Node id="4" score="-9.14911410075153E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0015554746097385802">
+										<Node id="9" score="0.0015652809789255592">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.002280033919759538">
+										<Node id="7" score="0.0022911529559499857">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="6.778393891498145E-4">
+										<Node id="8" score="5.938934802605178E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -1542,31 +1540,31 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-8.459422358464756E-5">
+									<Node id="10" score="7.065908756615007E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2">
+									<Node id="2" score="-7.559891922686207E-4">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-8.567870651736776E-4">
-											<SimplePredicate field="Age" operator="isMissing"/>
-										</Node>
-										<Node id="3" score="-3.074795643992211E-4">
-											<SimplePredicate field="Age" operator="lessThan" value="13"/>
-										</Node>
-										<Node id="4" score="-0.0010614818414056684">
-											<SimplePredicate field="Age" operator="greaterOrEqual" value="13"/>
-										</Node>
 									</Node>
-									<Node id="6">
+									<Node id="3">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0013745493926647532">
+										<Node id="9" score="0.0014870503475269464">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.00231017206361532">
+										<Node id="4" score="0.0022585400841368427">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="4.143050724786451E-4">
+										<Node id="5">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
+											<Node id="8" score="3.4150498104558447E-4">
+												<SimplePredicate field="Age" operator="isMissing"/>
+											</Node>
+											<Node id="6" score="0.001308485705497177">
+												<SimplePredicate field="Age" operator="lessThan" value="5.5"/>
+											</Node>
+											<Node id="7" score="-7.892142088989058E-5">
+												<SimplePredicate field="Age" operator="greaterOrEqual" value="5.5"/>
+											</Node>
 										</Node>
 									</Node>
 								</Node>
@@ -1578,35 +1576,34 @@
 								<MiningSchema>
 									<MiningField name="Pclass"/>
 									<MiningField name="Sex"/>
-									<MiningField name="SibSp"/>
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="5.384069599039465E-6">
+									<Node id="10" score="-8.744212459523362E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2" score="-8.727852900609192E-4">
+									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-									</Node>
-									<Node id="3">
-										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0014956108617492723">
+										<Node id="5" score="-8.324417732008093E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="4" score="0.002195857965867276">
+										<Node id="3" score="-2.0820109840518397E-4">
+											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
+										</Node>
+										<Node id="4" score="-0.001014742147256169">
+											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
+										</Node>
+									</Node>
+									<Node id="6">
+										<SimplePredicate field="Sex" operator="equal" value="female"/>
+										<Node id="9" score="0.0013343872701291329">
+											<SimplePredicate field="Pclass" operator="isMissing"/>
+										</Node>
+										<Node id="7" score="0.0020765184129860493">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="5">
+										<Node id="8" score="4.0672334155798714E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
-											<Node id="8" score="6.131076620389114E-4">
-												<SimplePredicate field="SibSp" operator="isMissing"/>
-											</Node>
-											<Node id="6" score="9.027699349751384E-4">
-												<SimplePredicate field="SibSp" operator="lessThan" value="2.5"/>
-											</Node>
-											<Node id="7" score="-0.0012117646574593183">
-												<SimplePredicate field="SibSp" operator="greaterOrEqual" value="2.5"/>
-											</Node>
 										</Node>
 									</Node>
 								</Node>
@@ -1621,30 +1618,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-8.527546362663421E-5">
+									<Node id="10" score="5.11551201315779E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-8.457455767862167E-4">
+										<Node id="5" score="-7.400277223960616E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="-3.389394138038812E-4">
+										<Node id="3" score="-5.939582002145292E-5">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-9.816127609048855E-4">
+										<Node id="4" score="-9.213175281687378E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.001456357826996193">
+										<Node id="9" score="0.0012833996622292232">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.0023568618744531553">
+										<Node id="7" score="0.002238554901948353">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="4.3839672987093167E-4">
+										<Node id="8" score="2.117620762028823E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -1660,30 +1657,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="8.463977590058407E-6">
+									<Node id="10" score="8.935840281489824E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-7.129975263306775E-4">
+										<Node id="5" score="-7.468181752266101E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="-1.3682510777153275E-4">
+										<Node id="3" score="9.248170474302142E-6">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-8.71507842353499E-4">
+										<Node id="4" score="-9.775426469193769E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.00138537090010545">
+										<Node id="9" score="0.0014813170177582476">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.002259992035988364">
+										<Node id="7" score="0.002227782221109271">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="3.483201247014236E-4">
+										<Node id="8" score="6.295810806013103E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -1696,34 +1693,35 @@
 								<MiningSchema>
 									<MiningField name="Pclass"/>
 									<MiningField name="Sex"/>
+									<MiningField name="Age"/>
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="6.8285229626311E-6">
+									<Node id="10" score="-3.785379141508613E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2">
+									<Node id="2" score="-7.494807579947421E-4">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-7.313322727085782E-4">
-											<SimplePredicate field="Pclass" operator="isMissing"/>
-										</Node>
-										<Node id="3" score="-3.4769079834127276E-4">
-											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
-										</Node>
-										<Node id="4" score="-9.7363215125635E-4">
-											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
-										</Node>
 									</Node>
-									<Node id="6">
+									<Node id="3">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.001247472269904001">
+										<Node id="9" score="0.0013616792428582372">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.0022591578334667755">
+										<Node id="4" score="0.0022016375905108193">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="2.1111144869335351E-4">
+										<Node id="5">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
+											<Node id="8" score="3.7564118257042386E-4">
+												<SimplePredicate field="Age" operator="isMissing"/>
+											</Node>
+											<Node id="6" score="0.0012108235726996962">
+												<SimplePredicate field="Age" operator="lessThan" value="5.5"/>
+											</Node>
+											<Node id="7" score="-3.0569181990345635E-4">
+												<SimplePredicate field="Age" operator="greaterOrEqual" value="5.5"/>
+											</Node>
 										</Node>
 									</Node>
 								</Node>
@@ -1738,30 +1736,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-1.008086005279264E-6">
+									<Node id="10" score="6.058781742457505E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-7.69456564591722E-4">
+										<Node id="5" score="-8.323802628269285E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="-8.1810041376603E-5">
+										<Node id="3" score="-5.860729243244716E-5">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-9.363331267108722E-4">
+										<Node id="4" score="-0.001028402748660197">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0015410810906175145">
+										<Node id="9" score="0.0016054773795774828">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.002350904551254064">
+										<Node id="7" score="0.0021320625070401253">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="5.62040787459895E-4">
+										<Node id="8" score="9.562628388701156E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -1777,30 +1775,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="4.765867430227211E-5">
+									<Node id="10" score="5.414542923334489E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-6.946710618366806E-4">
+										<Node id="5" score="-7.315984480016308E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="-2.6991530098050284E-5">
+										<Node id="3" score="3.2923847113397985E-4">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-8.788585188680269E-4">
+										<Node id="4" score="-9.582730033724878E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0015223539890481111">
+										<Node id="9" score="0.00144017810708883">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.0023393597505236476">
+										<Node id="7" score="0.0022466543959356244">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="6.943076091742568E-4">
+										<Node id="8" score="6.236208646314505E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -1813,34 +1811,35 @@
 								<MiningSchema>
 									<MiningField name="Pclass"/>
 									<MiningField name="Sex"/>
+									<MiningField name="SibSp"/>
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="1.26467304673002E-5">
+									<Node id="10" score="-1.1615082316032231E-4">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2">
+									<Node id="2" score="-8.923461427457728E-4">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-8.381327478168615E-4">
-											<SimplePredicate field="Pclass" operator="isMissing"/>
-										</Node>
-										<Node id="3" score="3.197074882957937E-5">
-											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
-										</Node>
-										<Node id="4" score="-0.0010415335652147308">
-											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
-										</Node>
 									</Node>
-									<Node id="6">
+									<Node id="3">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0015280976761609633">
+										<Node id="9" score="0.0013218007624819545">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.002134915913004004">
+										<Node id="4" score="0.002240927534633737">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="6.857977354683849E-4">
+										<Node id="5">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
+											<Node id="8" score="3.542988970590252E-4">
+												<SimplePredicate field="SibSp" operator="isMissing"/>
+											</Node>
+											<Node id="6" score="6.264411332419476E-4">
+												<SimplePredicate field="SibSp" operator="lessThan" value="2.5"/>
+											</Node>
+											<Node id="7" score="-0.0012538143167491523">
+												<SimplePredicate field="SibSp" operator="greaterOrEqual" value="2.5"/>
+											</Node>
 										</Node>
 									</Node>
 								</Node>
@@ -1852,34 +1851,35 @@
 								<MiningSchema>
 									<MiningField name="Pclass"/>
 									<MiningField name="Sex"/>
+									<MiningField name="SibSp"/>
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="3.8466426174674714E-5">
+									<Node id="10" score="-4.148776017480645E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2">
+									<Node id="2" score="-7.85683864033091E-4">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-8.704537537516111E-4">
-											<SimplePredicate field="Pclass" operator="isMissing"/>
-										</Node>
-										<Node id="3" score="-1.123985669073572E-4">
-											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
-										</Node>
-										<Node id="4" score="-0.0010860474307440137">
-											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
-										</Node>
 									</Node>
-									<Node id="6">
+									<Node id="3">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0015808764284738267">
+										<Node id="9" score="0.0013930481505520186">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.002141681134574235">
+										<Node id="4" score="0.0021593138909483376">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="8.00626402594997E-4">
+										<Node id="5">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
+											<Node id="8" score="3.6743092879079137E-4">
+												<SimplePredicate field="SibSp" operator="isMissing"/>
+											</Node>
+											<Node id="6" score="7.317346326701929E-4">
+												<SimplePredicate field="SibSp" operator="lessThan" value="2.5"/>
+											</Node>
+											<Node id="7" score="-0.0016362394425459173">
+												<SimplePredicate field="SibSp" operator="greaterOrEqual" value="2.5"/>
+											</Node>
 										</Node>
 									</Node>
 								</Node>
@@ -1891,35 +1891,34 @@
 								<MiningSchema>
 									<MiningField name="Pclass"/>
 									<MiningField name="Sex"/>
-									<MiningField name="Age"/>
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="3.955137854833272E-6">
+									<Node id="10" score="4.1804625285654E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2" score="-7.915049210512309E-4">
+									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-									</Node>
-									<Node id="3">
-										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.001353826752968154">
+										<Node id="5" score="-7.237620012958842E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="4" score="0.002118611771939235">
+										<Node id="3" score="2.204797089833385E-4">
+											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
+										</Node>
+										<Node id="4" score="-9.422982923212064E-4">
+											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
+										</Node>
+									</Node>
+									<Node id="6">
+										<SimplePredicate field="Sex" operator="equal" value="female"/>
+										<Node id="9" score="0.0013662818565494195">
+											<SimplePredicate field="Pclass" operator="isMissing"/>
+										</Node>
+										<Node id="7" score="0.002116255143798622">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="5">
+										<Node id="8" score="4.6428695701997353E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
-											<Node id="8" score="4.360847302028568E-4">
-												<SimplePredicate field="Age" operator="isMissing"/>
-											</Node>
-											<Node id="6" score="8.838243780471E-4">
-												<SimplePredicate field="Age" operator="lessThan" value="27.5"/>
-											</Node>
-											<Node id="7" score="-0.0013548738611741163">
-												<SimplePredicate field="Age" operator="greaterOrEqual" value="27.5"/>
-											</Node>
 										</Node>
 									</Node>
 								</Node>
@@ -1935,30 +1934,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-7.330505806612724E-5">
+									<Node id="10" score="3.0815419091112456E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2" score="-9.278622101801382E-4">
+									<Node id="2" score="-7.459579641785546E-4">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
 									</Node>
 									<Node id="3">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.001463822901082345">
+										<Node id="9" score="0.0013489763119123655">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="4" score="0.0022534518655697995">
+										<Node id="4" score="0.002174600312930533">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
 										<Node id="5">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
-											<Node id="8" score="4.338720778378393E-4">
+											<Node id="8" score="2.5589664859253784E-4">
 												<SimplePredicate field="Age" operator="isMissing"/>
 											</Node>
-											<Node id="6" score="0.0011263154064977713">
-												<SimplePredicate field="Age" operator="lessThan" value="19.5"/>
+											<Node id="6" score="0.001510543421555351">
+												<SimplePredicate field="Age" operator="lessThan" value="6"/>
 											</Node>
-											<Node id="7" score="-4.1492942180981947E-4">
-												<SimplePredicate field="Age" operator="greaterOrEqual" value="19.5"/>
+											<Node id="7" score="-5.610826454297591E-4">
+												<SimplePredicate field="Age" operator="greaterOrEqual" value="6"/>
 											</Node>
 										</Node>
 									</Node>
@@ -1971,35 +1970,34 @@
 								<MiningSchema>
 									<MiningField name="Pclass"/>
 									<MiningField name="Sex"/>
-									<MiningField name="SibSp"/>
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-1.7439089691945842E-4">
+									<Node id="10" score="-2.1780053841968147E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2" score="-9.787041142056978E-4">
+									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-									</Node>
-									<Node id="3">
-										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0014234393870854198">
+										<Node id="5" score="-7.793602079735841E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="4" score="0.002229889505833961">
+										<Node id="3" score="-1.5912450837639205E-4">
+											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
+										</Node>
+										<Node id="4" score="-9.438575022145785E-4">
+											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
+										</Node>
+									</Node>
+									<Node id="6">
+										<SimplePredicate field="Sex" operator="equal" value="female"/>
+										<Node id="9" score="0.0014097512763677738">
+											<SimplePredicate field="Pclass" operator="isMissing"/>
+										</Node>
+										<Node id="7" score="0.002170451380847287">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="5">
+										<Node id="8" score="6.290327480861681E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
-											<Node id="8" score="4.62814980929069E-4">
-												<SimplePredicate field="SibSp" operator="isMissing"/>
-											</Node>
-											<Node id="6" score="7.625180113552951E-4">
-												<SimplePredicate field="SibSp" operator="lessThan" value="1.5"/>
-											</Node>
-											<Node id="7" score="-9.357991610599853E-4">
-												<SimplePredicate field="SibSp" operator="greaterOrEqual" value="1.5"/>
-											</Node>
 										</Node>
 									</Node>
 								</Node>
@@ -2011,34 +2009,35 @@
 								<MiningSchema>
 									<MiningField name="Pclass"/>
 									<MiningField name="Sex"/>
+									<MiningField name="Age"/>
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="3.118291856636982E-5">
+									<Node id="10" score="-4.760212168858958E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2">
+									<Node id="2" score="-9.081739978514743E-4">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-7.350341075542813E-4">
-											<SimplePredicate field="Pclass" operator="isMissing"/>
-										</Node>
-										<Node id="3" score="1.2111701422963972E-5">
-											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
-										</Node>
-										<Node id="4" score="-9.852251353310653E-4">
-											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
-										</Node>
 									</Node>
-									<Node id="6">
+									<Node id="3">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0014790345718203276">
+										<Node id="9" score="0.0013849666302472303">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.0022012847084763396">
+										<Node id="4" score="0.0022125093654765224">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="4.633703171478106E-4">
+										<Node id="5">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
+											<Node id="8" score="3.1936365611636157E-4">
+												<SimplePredicate field="Age" operator="isMissing"/>
+											</Node>
+											<Node id="6" score="5.62970835078287E-4">
+												<SimplePredicate field="Age" operator="lessThan" value="38.5"/>
+											</Node>
+											<Node id="7" score="-0.0012153615713437677">
+												<SimplePredicate field="Age" operator="greaterOrEqual" value="38.5"/>
+											</Node>
 										</Node>
 									</Node>
 								</Node>
@@ -2050,34 +2049,35 @@
 								<MiningSchema>
 									<MiningField name="Pclass"/>
 									<MiningField name="Sex"/>
+									<MiningField name="Age"/>
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="2.428148008160825E-5">
+									<Node id="10" score="-6.021199189465336E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2">
+									<Node id="2" score="-8.550894324696998E-4">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-7.126325069100217E-4">
-											<SimplePredicate field="Pclass" operator="isMissing"/>
-										</Node>
-										<Node id="3" score="4.2069032175743664E-5">
-											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
-										</Node>
-										<Node id="4" score="-9.273031669166393E-4">
-											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
-										</Node>
 									</Node>
-									<Node id="6">
+									<Node id="3">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0013894618790596918">
+										<Node id="9" score="0.0014720188639506665">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.0022261958482373842">
+										<Node id="4" score="0.002170997072887719">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="4.6227018348441096E-4">
+										<Node id="5">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
+											<Node id="8" score="6.953764095761635E-4">
+												<SimplePredicate field="Age" operator="isMissing"/>
+											</Node>
+											<Node id="6" score="0.0011606858370573033">
+												<SimplePredicate field="Age" operator="lessThan" value="27.5"/>
+											</Node>
+											<Node id="7" score="-7.005518728672557E-4">
+												<SimplePredicate field="Age" operator="greaterOrEqual" value="27.5"/>
+											</Node>
 										</Node>
 									</Node>
 								</Node>
@@ -2089,34 +2089,35 @@
 								<MiningSchema>
 									<MiningField name="Pclass"/>
 									<MiningField name="Sex"/>
+									<MiningField name="SibSp"/>
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-1.1631176124903838E-4">
+									<Node id="10" score="-2.5962096587033693E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2">
+									<Node id="2" score="-8.251328461135027E-4">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-7.994936676668303E-4">
-											<SimplePredicate field="Pclass" operator="isMissing"/>
-										</Node>
-										<Node id="3" score="5.401906276151847E-5">
-											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
-										</Node>
-										<Node id="4" score="-0.0010229454983798315">
-											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
-										</Node>
 									</Node>
-									<Node id="6">
+									<Node id="3">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0012138569836968609">
+										<Node id="9" score="0.0013566523289740965">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.0020587556793353655">
+										<Node id="4" score="0.002191446826177134">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="2.8681535931572355E-4">
+										<Node id="5">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
+											<Node id="8" score="3.7716011892253255E-4">
+												<SimplePredicate field="SibSp" operator="isMissing"/>
+											</Node>
+											<Node id="6" score="8.799037838829456E-4">
+												<SimplePredicate field="SibSp" operator="lessThan" value="0.5"/>
+											</Node>
+											<Node id="7" score="-3.7695537851808694E-4">
+												<SimplePredicate field="SibSp" operator="greaterOrEqual" value="0.5"/>
+											</Node>
 										</Node>
 									</Node>
 								</Node>
@@ -2131,30 +2132,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-6.022342928402547E-5">
+									<Node id="10" score="-9.338173068037367E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-7.985900336300588E-4">
+										<Node id="5" score="-8.896924188662256E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="-5.966672862689592E-5">
+										<Node id="3" score="9.274219105593752E-6">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-9.880575477334338E-4">
+										<Node id="4" score="-0.0011252295292518552">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.001377391018912887">
+										<Node id="9" score="0.001381834864740852">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.0022126017340515156">
+										<Node id="7" score="0.0021884152968919286">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="4.6097926202466984E-4">
+										<Node id="8" score="3.3802489372181154E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -2170,30 +2171,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-5.120081330914871E-6">
+									<Node id="10" score="-6.784072320903857E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-7.315874644110474E-4">
+										<Node id="5" score="-9.154230642956026E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="6.834012514391328E-5">
+										<Node id="3" score="-7.428942950443761E-5">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-9.526200878407076E-4">
+										<Node id="4" score="-0.0011736315289291694">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0013676202334503744">
+										<Node id="9" score="0.001384419263652696">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.002269281142712173">
+										<Node id="7" score="0.002061101192861168">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="3.135659310739057E-4">
+										<Node id="8" score="5.19770131886315E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -2209,30 +2210,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-7.52673130150943E-5">
+									<Node id="10" score="-7.931734866027133E-6">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-8.827984774043698E-4">
+										<Node id="5" score="-7.431307614727285E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="-2.445282800260705E-4">
+										<Node id="3" score="6.529445031470171E-5">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-0.0010696793910511691">
+										<Node id="4" score="-9.496887451012348E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0013915772704008683">
+										<Node id="9" score="0.0013016415312771597">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.0022277510282961515">
+										<Node id="7" score="0.002185186454359702">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="3.403874033325125E-4">
+										<Node id="8" score="1.9409930375115526E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -2245,35 +2246,34 @@
 								<MiningSchema>
 									<MiningField name="Pclass"/>
 									<MiningField name="Sex"/>
-									<MiningField name="Age"/>
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-4.0716805536419545E-5">
+									<Node id="10" score="-3.5471815338402E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2" score="-7.515882097386241E-4">
+									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-									</Node>
-									<Node id="3">
-										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.001343363941718204">
+										<Node id="5" score="-8.073264461568107E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="4" score="0.002255492010155507">
+										<Node id="3" score="-1.1576327096493026E-4">
+											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
+										</Node>
+										<Node id="4" score="-0.0010154357349877006">
+											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
+										</Node>
+									</Node>
+									<Node id="6">
+										<SimplePredicate field="Sex" operator="equal" value="female"/>
+										<Node id="9" score="0.0012870352045394812">
+											<SimplePredicate field="Pclass" operator="isMissing"/>
+										</Node>
+										<Node id="7" score="0.002207648124073304">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="5">
+										<Node id="8" score="4.1026099545965044E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
-											<Node id="8" score="3.4255675551616324E-4">
-												<SimplePredicate field="Age" operator="isMissing"/>
-											</Node>
-											<Node id="6" score="0.0010167843898367997">
-												<SimplePredicate field="Age" operator="lessThan" value="7"/>
-											</Node>
-											<Node id="7" score="-1.3903441185571998E-4">
-												<SimplePredicate field="Age" operator="greaterOrEqual" value="7"/>
-											</Node>
 										</Node>
 									</Node>
 								</Node>
@@ -2288,30 +2288,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-1.7439002291194334E-5">
+									<Node id="10" score="4.621222783779235E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-7.736492326453012E-4">
+										<Node id="5" score="-8.073906544502396E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="-3.2361064911708474E-4">
-											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
+										<Node id="3" score="-1.3191801412985177E-4">
+											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-0.0010293529732863333">
-											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
+										<Node id="4" score="-9.859296783234698E-4">
+											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0012175552200622583">
+										<Node id="9" score="0.001596744045664787">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.002124731825365914">
+										<Node id="7" score="0.002276251975084611">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="2.5506296809374576E-4">
+										<Node id="8" score="6.495511743523051E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -2324,34 +2324,35 @@
 								<MiningSchema>
 									<MiningField name="Pclass"/>
 									<MiningField name="Sex"/>
+									<MiningField name="Age"/>
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-4.5542576875643106E-5">
+									<Node id="10" score="-5.346291011084198E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2">
+									<Node id="2" score="-8.201698006444305E-4">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-8.384359291440755E-4">
-											<SimplePredicate field="Pclass" operator="isMissing"/>
-										</Node>
-										<Node id="3" score="-1.2907274786725861E-4">
-											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
-										</Node>
-										<Node id="4" score="-0.0010251104505327115">
-											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
-										</Node>
 									</Node>
-									<Node id="6">
+									<Node id="3">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.001408936948304666">
+										<Node id="9" score="0.0013392261885166257">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.0021635997141395188">
+										<Node id="4" score="0.0022548611355294196">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="5.180156275274095E-4">
+										<Node id="5">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
+											<Node id="8" score="3.760257897109595E-4">
+												<SimplePredicate field="Age" operator="isMissing"/>
+											</Node>
+											<Node id="6" score="8.17856867497848E-4">
+												<SimplePredicate field="Age" operator="lessThan" value="27.5"/>
+											</Node>
+											<Node id="7" score="-9.727217109016476E-4">
+												<SimplePredicate field="Age" operator="greaterOrEqual" value="27.5"/>
+											</Node>
 										</Node>
 									</Node>
 								</Node>
@@ -2363,34 +2364,35 @@
 								<MiningSchema>
 									<MiningField name="Pclass"/>
 									<MiningField name="Sex"/>
+									<MiningField name="Age"/>
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="1.1335249994680167E-4">
+									<Node id="10" score="-1.7237326879331946E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2">
+									<Node id="2" score="-8.613742661697096E-4">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-7.288044371645469E-4">
-											<SimplePredicate field="Pclass" operator="isMissing"/>
-										</Node>
-										<Node id="3" score="8.315832068817123E-5">
-											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
-										</Node>
-										<Node id="4" score="-9.78935144559934E-4">
-											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
-										</Node>
 									</Node>
-									<Node id="6">
+									<Node id="3">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.001488709391323915">
+										<Node id="9" score="0.001593795263138905">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.002255758710136862">
+										<Node id="4" score="0.0023095779758100085">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="7.306841821440616E-4">
+										<Node id="5">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
+											<Node id="8" score="6.502635055269954E-4">
+												<SimplePredicate field="Age" operator="isMissing"/>
+											</Node>
+											<Node id="6" score="9.082493460729245E-4">
+												<SimplePredicate field="Age" operator="lessThan" value="33"/>
+											</Node>
+											<Node id="7" score="-7.944572015302083E-4">
+												<SimplePredicate field="Age" operator="greaterOrEqual" value="33"/>
+											</Node>
 										</Node>
 									</Node>
 								</Node>
@@ -2402,34 +2404,35 @@
 								<MiningSchema>
 									<MiningField name="Pclass"/>
 									<MiningField name="Sex"/>
+									<MiningField name="SibSp"/>
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-6.899638877445823E-5">
+									<Node id="10" score="-3.331190506173666E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2">
+									<Node id="2" score="-7.889009943478453E-4">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-9.079951477761578E-4">
-											<SimplePredicate field="Pclass" operator="isMissing"/>
-										</Node>
-										<Node id="3" score="4.330706391693549E-5">
-											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
-										</Node>
-										<Node id="4" score="-0.0011822444340300225">
-											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
-										</Node>
 									</Node>
-									<Node id="6">
+									<Node id="3">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0014401460330776556">
+										<Node id="9" score="0.0013391822001604988">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.0020865569080417883">
+										<Node id="4" score="0.0021899540614291058">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="5.525370704403392E-4">
+										<Node id="5">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
+											<Node id="8" score="5.096796354236074E-4">
+												<SimplePredicate field="SibSp" operator="isMissing"/>
+											</Node>
+											<Node id="6" score="8.011416433190482E-4">
+												<SimplePredicate field="SibSp" operator="lessThan" value="2.5"/>
+											</Node>
+											<Node id="7" score="-9.924707129605882E-4">
+												<SimplePredicate field="SibSp" operator="greaterOrEqual" value="2.5"/>
+											</Node>
 										</Node>
 									</Node>
 								</Node>
@@ -2444,30 +2447,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="2.9336034332430926E-5">
+									<Node id="10" score="8.696520217590327E-6">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-8.088424945619491E-4">
+										<Node id="5" score="-7.425111741984259E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="2.8385777412835987E-5">
+										<Node id="3" score="1.2812536385596292E-4">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-0.0010437210143014815">
+										<Node id="4" score="-9.641277475213613E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0014935614891294035">
+										<Node id="9" score="0.0012355209205656406">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.0021458958484047177">
+										<Node id="7" score="0.00220658826958753">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="8.249187708722064E-4">
+										<Node id="8" score="2.2935475169958623E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -2480,35 +2483,34 @@
 								<MiningSchema>
 									<MiningField name="Pclass"/>
 									<MiningField name="Sex"/>
-									<MiningField name="Age"/>
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-2.7242581671165862E-5">
+									<Node id="10" score="-6.760378196012313E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2" score="-7.70129534965148E-4">
+									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-									</Node>
-									<Node id="3">
-										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0012456307956191326">
+										<Node id="5" score="-8.174408871711396E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="4" score="0.0021518383634219775">
+										<Node id="3" score="-1.3597079920861263E-4">
+											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
+										</Node>
+										<Node id="4" score="-0.0010218819135598975">
+											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
+										</Node>
+									</Node>
+									<Node id="6">
+										<SimplePredicate field="Sex" operator="equal" value="female"/>
+										<Node id="9" score="0.001281159816092397">
+											<SimplePredicate field="Pclass" operator="isMissing"/>
+										</Node>
+										<Node id="7" score="0.002207923354793769">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="5">
+										<Node id="8" score="1.3249514840618922E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
-											<Node id="8" score="2.705973365907551E-4">
-												<SimplePredicate field="Age" operator="isMissing"/>
-											</Node>
-											<Node id="6" score="6.269095412797843E-4">
-												<SimplePredicate field="Age" operator="lessThan" value="28"/>
-											</Node>
-											<Node id="7" score="-9.369051348553993E-4">
-												<SimplePredicate field="Age" operator="greaterOrEqual" value="28"/>
-											</Node>
 										</Node>
 									</Node>
 								</Node>
@@ -2523,30 +2525,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-1.5620040930382464E-4">
+									<Node id="10" score="4.098609416904939E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-8.883634931509012E-4">
+										<Node id="5" score="-6.555281569404823E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="-7.040795176971502E-5">
+										<Node id="3" score="1.0721308774612917E-4">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-0.0010690364038977497">
+										<Node id="4" score="-8.873746145765008E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.001422363970054411">
+										<Node id="9" score="0.0014246654118094616">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.0021851904405622395">
+										<Node id="7" score="0.0021441387561307924">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="4.2193581201135753E-4">
+										<Node id="8" score="5.198731757689997E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -2559,35 +2561,35 @@
 								<MiningSchema>
 									<MiningField name="Pclass"/>
 									<MiningField name="Sex"/>
-									<MiningField name="SibSp"/>
+									<MiningField name="Age"/>
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-1.077323093134069E-4">
+									<Node id="10" score="5.32642119495133E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2" score="-8.032567529467322E-4">
+									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
+										<Node id="5" score="-7.509554128940316E-4">
+											<SimplePredicate field="Age" operator="isMissing"/>
+										</Node>
+										<Node id="3" score="-8.155385540921529E-5">
+											<SimplePredicate field="Age" operator="lessThan" value="13.5"/>
+										</Node>
+										<Node id="4" score="-9.783597697429404E-4">
+											<SimplePredicate field="Age" operator="greaterOrEqual" value="13.5"/>
+										</Node>
 									</Node>
-									<Node id="3">
+									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0011681341860139667">
+										<Node id="9" score="0.001418000545017347">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="4" score="0.002113756503074345">
+										<Node id="7" score="0.0022157610141199354">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="5">
+										<Node id="8" score="3.3532562266383394E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
-											<Node id="8" score="3.0323572528801086E-4">
-												<SimplePredicate field="SibSp" operator="isMissing"/>
-											</Node>
-											<Node id="6" score="6.468027587830409E-4">
-												<SimplePredicate field="SibSp" operator="lessThan" value="2.5"/>
-											</Node>
-											<Node id="7" score="-0.0011139782878789876">
-												<SimplePredicate field="SibSp" operator="greaterOrEqual" value="2.5"/>
-											</Node>
 										</Node>
 									</Node>
 								</Node>
@@ -2602,30 +2604,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-9.31685729929418E-6">
+									<Node id="10" score="-3.661082246751563E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-9.167901677681246E-4">
+										<Node id="5" score="-7.745482273500906E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="-2.4619186196386084E-4">
+										<Node id="3" score="2.791483368016361E-4">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-0.00110792688294905">
+										<Node id="4" score="-0.0010830629871242448">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0013392189001571802">
+										<Node id="9" score="0.0013038197800723514">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.0022153563658813247">
+										<Node id="7" score="0.002125731560303667">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="3.0281238582496026E-4">
+										<Node id="8" score="4.819079998410367E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -2641,30 +2643,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="1.5924997345975845E-4">
+									<Node id="10" score="9.42241945380843E-6">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-5.753793066307942E-4">
+										<Node id="5" score="-7.632671650703024E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="7.096549672736076E-4">
+										<Node id="3" score="1.1192157971772513E-4">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-8.780762689282757E-4">
+										<Node id="4" score="-9.877721039507094E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0013821657810356486">
+										<Node id="9" score="0.001440879406168347">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.0021139032962529643">
+										<Node id="7" score="0.0021412218828239273">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="4.845677623690744E-4">
+										<Node id="8" score="6.024412298905398E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -2681,30 +2683,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-1.7838983995637772E-4">
+									<Node id="10" score="-6.0688415831747486E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2" score="-8.902408516383844E-4">
+									<Node id="2" score="-9.050543132628247E-4">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
 									</Node>
 									<Node id="3">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0012944053566270844">
+										<Node id="9" score="0.0013051975947185243">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="4" score="0.0021428664800648913">
+										<Node id="4" score="0.0021932205745651243">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
 										<Node id="5">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
-											<Node id="8" score="2.1713671470373834E-5">
+											<Node id="8" score="3.5219732366363637E-4">
 												<SimplePredicate field="SibSp" operator="isMissing"/>
 											</Node>
-											<Node id="6" score="4.0855891700678995E-4">
-												<SimplePredicate field="SibSp" operator="lessThan" value="1.5"/>
+											<Node id="6" score="6.44018728081411E-4">
+												<SimplePredicate field="SibSp" operator="lessThan" value="2.5"/>
 											</Node>
-											<Node id="7" score="-0.00131736602461722">
-												<SimplePredicate field="SibSp" operator="greaterOrEqual" value="1.5"/>
+											<Node id="7" score="-8.515659695596839E-4">
+												<SimplePredicate field="SibSp" operator="greaterOrEqual" value="2.5"/>
 											</Node>
 										</Node>
 									</Node>
@@ -2717,34 +2719,35 @@
 								<MiningSchema>
 									<MiningField name="Pclass"/>
 									<MiningField name="Sex"/>
+									<MiningField name="SibSp"/>
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-8.343436904417207E-5">
+									<Node id="10" score="9.258856846114658E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2">
+									<Node id="2" score="-7.333912548274366E-4">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-8.452825363606717E-4">
-											<SimplePredicate field="Pclass" operator="isMissing"/>
-										</Node>
-										<Node id="3" score="-3.8058408773826434E-5">
-											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
-										</Node>
-										<Node id="4" score="-0.0010677176292957136">
-											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
-										</Node>
 									</Node>
-									<Node id="6">
+									<Node id="3">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0013004290741193431">
+										<Node id="9" score="0.0014942512988902574">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.0021127895656132163">
+										<Node id="4" score="0.0021902627781890042">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="5.08377594912817E-4">
+										<Node id="5">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
+											<Node id="8" score="6.988096082631184E-4">
+												<SimplePredicate field="SibSp" operator="isMissing"/>
+											</Node>
+											<Node id="6" score="0.0010190606942476362">
+												<SimplePredicate field="SibSp" operator="lessThan" value="1.5"/>
+											</Node>
+											<Node id="7" score="-7.423202786672115E-4">
+												<SimplePredicate field="SibSp" operator="greaterOrEqual" value="1.5"/>
+											</Node>
 										</Node>
 									</Node>
 								</Node>
@@ -2756,34 +2759,35 @@
 								<MiningSchema>
 									<MiningField name="Pclass"/>
 									<MiningField name="Sex"/>
+									<MiningField name="SibSp"/>
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="6.81751431642573E-5">
+									<Node id="10" score="2.430738504759604E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2">
+									<Node id="2" score="-7.336207819332669E-4">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-7.577539325616526E-4">
-											<SimplePredicate field="Pclass" operator="isMissing"/>
-										</Node>
-										<Node id="3" score="5.192111641418691E-5">
-											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
-										</Node>
-										<Node id="4" score="-9.437603627317778E-4">
-											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
-										</Node>
 									</Node>
-									<Node id="6">
+									<Node id="3">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.001379097455217591">
+										<Node id="9" score="0.001374366932482258">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.0021243136055651814">
+										<Node id="4" score="0.0020715258695073575">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="3.6846185406127E-4">
+										<Node id="5">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
+											<Node id="8" score="3.554423322148053E-4">
+												<SimplePredicate field="SibSp" operator="isMissing"/>
+											</Node>
+											<Node id="6" score="6.488691562141974E-4">
+												<SimplePredicate field="SibSp" operator="lessThan" value="1.5"/>
+											</Node>
+											<Node id="7" score="-9.405261404491768E-4">
+												<SimplePredicate field="SibSp" operator="greaterOrEqual" value="1.5"/>
+											</Node>
 										</Node>
 									</Node>
 								</Node>
@@ -2798,30 +2802,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-7.324187957667465E-6">
+									<Node id="10" score="-2.5017616322897697E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-7.920609020773944E-4">
+										<Node id="5" score="-7.261784342892127E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="1.9859693473657266E-5">
+										<Node id="3" score="5.9678072909017135E-5">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-9.732620650329939E-4">
+										<Node id="4" score="-9.556763523205542E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.001390488084068096">
+										<Node id="9" score="0.0013131455133905926">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.0021071476218706134">
+										<Node id="7" score="0.0021522270854533333">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="7.087875481096043E-4">
+										<Node id="8" score="5.063363094841107E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -2837,30 +2841,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-1.9099477497348462E-5">
+									<Node id="10" score="-7.333802091628965E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-7.264583767042733E-4">
+										<Node id="5" score="-7.808503937732003E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="1.4370695979778412E-4">
+										<Node id="3" score="-1.5344593949914986E-4">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-9.45891374604792E-4">
+										<Node id="4" score="-9.57739755330642E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.001278476082831278">
+										<Node id="9" score="0.0012635847096120285">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.002174204985051339">
+										<Node id="7" score="0.002101797872815734">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="2.2101835104370644E-4">
+										<Node id="8" score="4.253715464083233E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -2873,35 +2877,34 @@
 								<MiningSchema>
 									<MiningField name="Pclass"/>
 									<MiningField name="Sex"/>
-									<MiningField name="SibSp"/>
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="1.1833527969004528E-4">
+									<Node id="10" score="-4.3126337349991285E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2" score="-6.828434194785582E-4">
+									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-									</Node>
-									<Node id="3">
-										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0014779112540367664">
+										<Node id="5" score="-7.35229636166945E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="4" score="0.002193393385400546">
+										<Node id="3" score="8.541223595999688E-5">
+											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
+										</Node>
+										<Node id="4" score="-9.353861903442478E-4">
+											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
+										</Node>
+									</Node>
+									<Node id="6">
+										<SimplePredicate field="Sex" operator="equal" value="female"/>
+										<Node id="9" score="0.0014804967521319355">
+											<SimplePredicate field="Pclass" operator="isMissing"/>
+										</Node>
+										<Node id="7" score="0.0022094863778679536">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="5">
+										<Node id="8" score="5.206604115795116E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
-											<Node id="8" score="4.8245785387846364E-4">
-												<SimplePredicate field="SibSp" operator="isMissing"/>
-											</Node>
-											<Node id="6" score="7.709918663017816E-4">
-												<SimplePredicate field="SibSp" operator="lessThan" value="2.5"/>
-											</Node>
-											<Node id="7" score="-0.0012198928194191118">
-												<SimplePredicate field="SibSp" operator="greaterOrEqual" value="2.5"/>
-											</Node>
 										</Node>
 									</Node>
 								</Node>
@@ -2916,30 +2919,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-3.1919861914598115E-5">
+									<Node id="10" score="-2.0255422733171552E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-7.944502343992441E-4">
+										<Node id="5" score="-7.649084062279396E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="-5.582167331971168E-5">
+										<Node id="3" score="8.540135232984814E-5">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-9.905463125619517E-4">
+										<Node id="4" score="-9.85768083775417E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0013396756508565263">
+										<Node id="9" score="0.0013868485915329164">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.002266964284213933">
+										<Node id="7" score="0.0021670206918311965">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="2.1920188554965921E-4">
+										<Node id="8" score="4.506420711749807E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -2952,35 +2955,34 @@
 								<MiningSchema>
 									<MiningField name="Pclass"/>
 									<MiningField name="Sex"/>
-									<MiningField name="Age"/>
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-7.550407917432484E-5">
+									<Node id="10" score="-4.789940547657544E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2" score="-8.384492703792449E-4">
+									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-									</Node>
-									<Node id="3">
-										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0013805743249553264">
+										<Node id="5" score="-7.746174405581928E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="4" score="0.0021083804899894496">
+										<Node id="3" score="-7.56989355516883E-5">
+											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
+										</Node>
+										<Node id="4" score="-9.456607877749745E-4">
+											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
+										</Node>
+									</Node>
+									<Node id="6">
+										<SimplePredicate field="Sex" operator="equal" value="female"/>
+										<Node id="9" score="0.0013813127301839387">
+											<SimplePredicate field="Pclass" operator="isMissing"/>
+										</Node>
+										<Node id="7" score="0.0022128855495084313">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="5">
+										<Node id="8" score="3.229473237709483E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
-											<Node id="8" score="5.400094582961986E-4">
-												<SimplePredicate field="Age" operator="isMissing"/>
-											</Node>
-											<Node id="6" score="0.0012841249928032166">
-												<SimplePredicate field="Age" operator="lessThan" value="1.5"/>
-											</Node>
-											<Node id="7" score="2.481994447640345E-4">
-												<SimplePredicate field="Age" operator="greaterOrEqual" value="1.5"/>
-											</Node>
 										</Node>
 									</Node>
 								</Node>
@@ -2995,30 +2997,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-3.362712611976599E-5">
+									<Node id="10" score="4.067814572583565E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-8.680557368952311E-4">
+										<Node id="5" score="-6.891306413962614E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="-1.7250399179827942E-4">
+										<Node id="3" score="-4.627789735598539E-6">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-0.0010537460217853673">
+										<Node id="4" score="-9.042601090610412E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0013823729406507205">
+										<Node id="9" score="0.001232555218185592">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.002164802243579065">
+										<Node id="7" score="0.002128709693311266">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="5.306144589818895E-4">
+										<Node id="8" score="2.1161974019431792E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -3031,35 +3033,34 @@
 								<MiningSchema>
 									<MiningField name="Pclass"/>
 									<MiningField name="Sex"/>
-									<MiningField name="SibSp"/>
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-2.9824525052781663E-5">
+									<Node id="10" score="-4.154621173795981E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2" score="-7.386354321236902E-4">
+									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-									</Node>
-									<Node id="3">
-										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0012832931168926835">
+										<Node id="5" score="-8.377710791861011E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="4" score="0.002122373934553105">
+										<Node id="3" score="-1.7233421975792812E-4">
+											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
+										</Node>
+										<Node id="4" score="-9.99790488438178E-4">
+											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
+										</Node>
+									</Node>
+									<Node id="6">
+										<SimplePredicate field="Sex" operator="equal" value="female"/>
+										<Node id="9" score="0.0013906570089549234">
+											<SimplePredicate field="Pclass" operator="isMissing"/>
+										</Node>
+										<Node id="7" score="0.0020239856211674945">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="5">
+										<Node id="8" score="6.253849358647332E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
-											<Node id="8" score="1.6869322477660147E-4">
-												<SimplePredicate field="SibSp" operator="isMissing"/>
-											</Node>
-											<Node id="6" score="4.859961714980889E-4">
-												<SimplePredicate field="SibSp" operator="lessThan" value="2.5"/>
-											</Node>
-											<Node id="7" score="-0.0016399335715358767">
-												<SimplePredicate field="SibSp" operator="greaterOrEqual" value="2.5"/>
-											</Node>
 										</Node>
 									</Node>
 								</Node>
@@ -3074,30 +3075,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-7.438000313939604E-5">
+									<Node id="10" score="5.027170739169373E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-8.187929084137945E-4">
+										<Node id="5" score="-7.153428711651042E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="-9.929506366036726E-6">
+										<Node id="3" score="5.777194036493051E-5">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-0.0010287531957538507">
+										<Node id="4" score="-9.25878601090694E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0014044536878755163">
+										<Node id="9" score="0.0014140226754459902">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.0020904910363609436">
+										<Node id="7" score="0.002042585167600106">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="6.302115374419626E-4">
+										<Node id="8" score="5.415404102171426E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -3113,30 +3114,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-1.0820216719863199E-4">
+									<Node id="10" score="-5.843175876348448E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-8.762048737574425E-4">
+										<Node id="5" score="-7.616112065925397E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="-2.1886612663513032E-4">
+										<Node id="3" score="3.5279934255049507E-4">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-0.0010513038413315081">
+										<Node id="4" score="-0.0010155275342453832">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0013287061224920456">
+										<Node id="9" score="0.0012703034316147953">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.0022039167665063053">
+										<Node id="7" score="0.002199930422469118">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="2.3786387053224383E-4">
+										<Node id="8" score="1.835563859681924E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -3152,30 +3153,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-4.250807414933141E-5">
+									<Node id="10" score="-3.533377919092022E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-8.723299890127223E-4">
+										<Node id="5" score="-8.112487299136144E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="-4.0778364899601356E-4">
+										<Node id="3" score="8.524353172562728E-5">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-9.940451872703752E-4">
+										<Node id="4" score="-0.001073735202916095">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0014947902168475915">
+										<Node id="9" score="0.0013740813528180244">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.0020648803316811472">
+										<Node id="7" score="0.0021151047949850748">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="7.570265388276961E-4">
+										<Node id="8" score="4.18268507124293E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -3191,30 +3192,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="1.958463582683535E-5">
+									<Node id="10" score="-1.4477097030873238E-4">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-7.761548927503829E-4">
+										<Node id="5" score="-8.742652807360205E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="-1.950104103402534E-4">
+										<Node id="3" score="4.19079973211926E-5">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-9.822751032603793E-4">
+										<Node id="4" score="-0.0011092836433680882">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0013068103438193942">
+										<Node id="9" score="0.0012066640022136154">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.002111240871870536">
+										<Node id="7" score="0.002137592170210987">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="4.2292988707184296E-4">
+										<Node id="8" score="2.2673961484796142E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -3230,30 +3231,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-1.112976436507042E-4">
+									<Node id="10" score="-9.99972249117165E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-7.512374385869966E-4">
+										<Node id="5" score="-8.425931633931753E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="-1.1825072915458114E-4">
+										<Node id="3" score="3.4360040159154725E-5">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-9.603491193816338E-4">
+										<Node id="4" score="-0.0011158762547327386">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0011859952739752492">
+										<Node id="9" score="0.001184739306694243">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.0020196577103077182">
+										<Node id="7" score="0.0020401178057647615">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="2.689665940095333E-4">
+										<Node id="8" score="3.1880057924013784E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -3266,34 +3267,34 @@
 								<MiningSchema>
 									<MiningField name="Pclass"/>
 									<MiningField name="Sex"/>
-									<MiningField name="SibSp"/>
+									<MiningField name="Age"/>
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="4.794930642368448E-6">
+									<Node id="10" score="1.828689441637804E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2" score="-8.395291994263703E-4">
+									<Node id="2" score="-8.156489942367771E-4">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
 									</Node>
 									<Node id="3">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0014797562195896098">
+										<Node id="9" score="0.0014199020325743915">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="4" score="0.002189435618908071">
+										<Node id="4" score="0.002032177556420575">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
 										<Node id="5">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
-											<Node id="8" score="7.154860972466515E-4">
-												<SimplePredicate field="SibSp" operator="isMissing"/>
+											<Node id="8" score="6.205423208863192E-4">
+												<SimplePredicate field="Age" operator="isMissing"/>
 											</Node>
-											<Node id="6" score="0.0012050106982647475">
-												<SimplePredicate field="SibSp" operator="lessThan" value="0.5"/>
+											<Node id="6" score="0.0014533668522315336">
+												<SimplePredicate field="Age" operator="lessThan" value="5.5"/>
 											</Node>
-											<Node id="7" score="8.19836723997036E-5">
-												<SimplePredicate field="SibSp" operator="greaterOrEqual" value="0.5"/>
+											<Node id="7" score="-9.154275984452552E-6">
+												<SimplePredicate field="Age" operator="greaterOrEqual" value="5.5"/>
 											</Node>
 										</Node>
 									</Node>
@@ -3306,34 +3307,35 @@
 								<MiningSchema>
 									<MiningField name="Pclass"/>
 									<MiningField name="Sex"/>
+									<MiningField name="Age"/>
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-3.416407756812693E-6">
+									<Node id="10" score="-1.2965383649916578E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2">
+									<Node id="2" score="-9.241351250101651E-4">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-7.6705832922466E-4">
-											<SimplePredicate field="Pclass" operator="isMissing"/>
-										</Node>
-										<Node id="3" score="-5.907005254242126E-5">
-											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
-										</Node>
-										<Node id="4" score="-9.644178930785584E-4">
-											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
-										</Node>
 									</Node>
-									<Node id="6">
+									<Node id="3">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0014112792031675968">
+										<Node id="9" score="0.001353789228390456">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.0021379547920491026">
+										<Node id="4" score="0.0021117137115308974">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="5.634910161391736E-4">
+										<Node id="5">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
+											<Node id="8" score="5.429862929378909E-4">
+												<SimplePredicate field="Age" operator="isMissing"/>
+											</Node>
+											<Node id="6" score="8.271756224615598E-4">
+												<SimplePredicate field="Age" operator="lessThan" value="27.5"/>
+											</Node>
+											<Node id="7" score="-8.021765334741421E-4">
+												<SimplePredicate field="Age" operator="greaterOrEqual" value="27.5"/>
+											</Node>
 										</Node>
 									</Node>
 								</Node>
@@ -3348,30 +3350,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="1.0573645697113509E-5">
+									<Node id="10" score="-1.6006482507746684E-4">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-7.851696074439534E-4">
+										<Node id="5" score="-8.619521760941587E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="-8.060415389173114E-6">
+										<Node id="3" score="-6.144503145898465E-5">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-9.967930927802999E-4">
+										<Node id="4" score="-0.001072085301560892">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0014279913153546389">
+										<Node id="9" score="0.0013376243816694178">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.0021501194756831984">
+										<Node id="7" score="0.001969110568684893">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="4.756193937619011E-4">
+										<Node id="8" score="5.45760750332552E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -3384,35 +3386,34 @@
 								<MiningSchema>
 									<MiningField name="Pclass"/>
 									<MiningField name="Sex"/>
-									<MiningField name="Age"/>
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-1.0704327041871762E-4">
+									<Node id="10" score="-1.232180704084964E-4">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2" score="-8.985348690136389E-4">
+									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-									</Node>
-									<Node id="3">
-										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0014653158784678373">
+										<Node id="5" score="-8.645286995285239E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="4" score="0.002229524925400379">
+										<Node id="3" score="-4.633416571203726E-4">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="5">
+										<Node id="4" score="-0.0011800965560568868">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
-											<Node id="8" score="4.7772264858578364E-4">
-												<SimplePredicate field="Age" operator="isMissing"/>
-											</Node>
-											<Node id="6" score="0.0013810916211881392">
-												<SimplePredicate field="Age" operator="lessThan" value="6.5"/>
-											</Node>
-											<Node id="7" score="-2.499912460105585E-4">
-												<SimplePredicate field="Age" operator="greaterOrEqual" value="6.5"/>
-											</Node>
+										</Node>
+									</Node>
+									<Node id="6">
+										<SimplePredicate field="Sex" operator="equal" value="female"/>
+										<Node id="9" score="0.0013057557080926093">
+											<SimplePredicate field="Pclass" operator="isMissing"/>
+										</Node>
+										<Node id="7" score="0.002116204708867642">
+											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
+										</Node>
+										<Node id="8" score="4.7369473396357534E-4">
+											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
 								</Node>
@@ -3424,34 +3425,35 @@
 								<MiningSchema>
 									<MiningField name="Pclass"/>
 									<MiningField name="Sex"/>
+									<MiningField name="SibSp"/>
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-1.6050252148983873E-4">
+									<Node id="10" score="7.901710112506354E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2">
+									<Node id="2" score="-7.327910743647418E-4">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-8.763181961856918E-4">
-											<SimplePredicate field="Pclass" operator="isMissing"/>
-										</Node>
-										<Node id="3" score="-1.2550723319399365E-4">
-											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
-										</Node>
-										<Node id="4" score="-0.0010775994330728279">
-											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
-										</Node>
 									</Node>
-									<Node id="6">
+									<Node id="3">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0012906068054446115">
+										<Node id="9" score="0.0014434416852314232">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.00211181885382185">
+										<Node id="4" score="0.0021420364168863513">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="3.872735522296491E-4">
+										<Node id="5">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
+											<Node id="8" score="6.35975047344558E-4">
+												<SimplePredicate field="SibSp" operator="isMissing"/>
+											</Node>
+											<Node id="6" score="8.883713171410166E-4">
+												<SimplePredicate field="SibSp" operator="lessThan" value="2.5"/>
+											</Node>
+											<Node id="7" score="-8.78402571434194E-4">
+												<SimplePredicate field="SibSp" operator="greaterOrEqual" value="2.5"/>
+											</Node>
 										</Node>
 									</Node>
 								</Node>
@@ -3466,30 +3468,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-2.3401265477891327E-4">
+									<Node id="10" score="-6.29939950058702E-6">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-9.05237542402944E-4">
+										<Node id="5" score="-7.829544640691248E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="2.5352507433655865E-6">
+										<Node id="3" score="1.0617634803091273E-4">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-0.0011183987650850733">
+										<Node id="4" score="-9.623070313167719E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.001228298707544868">
+										<Node id="9" score="0.001311660710070265">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.0020526434983502437">
+										<Node id="7" score="0.0021328605703741475">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="2.493892684634845E-4">
+										<Node id="8" score="4.1769630518249403E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -3502,34 +3504,35 @@
 								<MiningSchema>
 									<MiningField name="Pclass"/>
 									<MiningField name="Sex"/>
+									<MiningField name="Age"/>
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-4.98793380268211E-5">
+									<Node id="10" score="6.336381426057622E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2">
+									<Node id="2" score="-7.067492131683051E-4">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-7.815139580158088E-4">
-											<SimplePredicate field="Pclass" operator="isMissing"/>
-										</Node>
-										<Node id="3" score="1.2200740542710973E-4">
-											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
-										</Node>
-										<Node id="4" score="-9.927267442751922E-4">
-											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
-										</Node>
 									</Node>
-									<Node id="6">
+									<Node id="3">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.001253344828828563">
+										<Node id="9" score="0.0012515381994365644">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.002114381578463681">
+										<Node id="4" score="0.001976382627730619">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="3.9230807919344565E-4">
+										<Node id="5">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
+											<Node id="8" score="3.907854408373749E-4">
+												<SimplePredicate field="Age" operator="isMissing"/>
+											</Node>
+											<Node id="6" score="7.494121547601502E-4">
+												<SimplePredicate field="Age" operator="lessThan" value="27.5"/>
+											</Node>
+											<Node id="7" score="-7.605950617567987E-4">
+												<SimplePredicate field="Age" operator="greaterOrEqual" value="27.5"/>
+											</Node>
 										</Node>
 									</Node>
 								</Node>
@@ -3544,30 +3547,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-7.704606932934975E-5">
+									<Node id="10" score="-3.262533134405987E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-7.545142586690722E-4">
+										<Node id="5" score="-7.74119183033533E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="-2.3463402580941304E-4">
+										<Node id="3" score="6.072166585916956E-5">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-9.130427601688787E-4">
+										<Node id="4" score="-9.994523325134218E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0012031048598775283">
+										<Node id="9" score="0.001314265399256439">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.002109076708764998">
+										<Node id="7" score="0.0020188722714064135">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="2.488145123827266E-4">
+										<Node id="8" score="5.540316687788349E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -3584,29 +3587,29 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="1.0466651486571352E-4">
+									<Node id="10" score="-5.8077639236094924E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2" score="-7.244316849289101E-4">
+									<Node id="2" score="-8.070581219804444E-4">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
 									</Node>
 									<Node id="3">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0014716915228604203">
+										<Node id="9" score="0.0015074996198336911">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="4" score="0.002176851025593255">
+										<Node id="4" score="0.002074766207836005">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
 										<Node id="5">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
-											<Node id="8" score="6.580459427840723E-4">
+											<Node id="8" score="6.902511455930702E-4">
 												<SimplePredicate field="SibSp" operator="isMissing"/>
 											</Node>
-											<Node id="6" score="9.104282753525205E-4">
+											<Node id="6" score="9.949643338482972E-4">
 												<SimplePredicate field="SibSp" operator="lessThan" value="2.5"/>
 											</Node>
-											<Node id="7" score="-8.791919010419303E-4">
+											<Node id="7" score="-8.028434768575422E-4">
 												<SimplePredicate field="SibSp" operator="greaterOrEqual" value="2.5"/>
 											</Node>
 										</Node>
@@ -3620,35 +3623,34 @@
 								<MiningSchema>
 									<MiningField name="Pclass"/>
 									<MiningField name="Sex"/>
-									<MiningField name="Age"/>
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-1.6628187832129964E-5">
+									<Node id="10" score="-8.774683565731728E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2" score="-7.594998568236655E-4">
+									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-									</Node>
-									<Node id="3">
-										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0012937789798299576">
+										<Node id="5" score="-7.067340575273279E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="4" score="0.0020860058555839125">
+										<Node id="3" score="6.155370756634716E-5">
+											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
+										</Node>
+										<Node id="4" score="-8.988059988007467E-4">
+											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
+										</Node>
+									</Node>
+									<Node id="6">
+										<SimplePredicate field="Sex" operator="equal" value="female"/>
+										<Node id="9" score="0.0012607610405594915">
+											<SimplePredicate field="Pclass" operator="isMissing"/>
+										</Node>
+										<Node id="7" score="0.0021346271878559153">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="5">
+										<Node id="8" score="4.1151084107423464E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
-											<Node id="8" score="2.638840413498165E-4">
-												<SimplePredicate field="Age" operator="isMissing"/>
-											</Node>
-											<Node id="6" score="0.0010817047188237943">
-												<SimplePredicate field="Age" operator="lessThan" value="5.5"/>
-											</Node>
-											<Node id="7" score="-2.1937363170298856E-4">
-												<SimplePredicate field="Age" operator="greaterOrEqual" value="5.5"/>
-											</Node>
 										</Node>
 									</Node>
 								</Node>
@@ -3663,30 +3665,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="1.3647327337760933E-5">
+									<Node id="10" score="-3.7393569386503826E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-7.116645896167778E-4">
+										<Node id="5" score="-7.345790194779341E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="2.4294994719597894E-4">
+										<Node id="3" score="1.4828178533080859E-6">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-9.747139286496264E-4">
+										<Node id="4" score="-9.147122961243985E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0013311442904134106">
+										<Node id="9" score="0.001333737815793309">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.0019717299015048896">
+										<Node id="7" score="0.0020973839963820276">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="5.852569350329214E-4">
+										<Node id="8" score="5.282480088709615E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -3702,30 +3704,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="3.305765946034419E-5">
+									<Node id="10" score="-5.557651799961003E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-7.117976260918983E-4">
+										<Node id="5" score="-8.093143682393906E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="-1.4443499909317645E-5">
+										<Node id="3" score="-8.325555011800917E-5">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-8.801244841359693E-4">
+										<Node id="4" score="-0.0010205314789656105">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0013994163998364323">
+										<Node id="9" score="0.0012739983234171456">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.0021608231739173017">
+										<Node id="7" score="0.002208106716245">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="5.00533402657628E-4">
+										<Node id="8" score="2.800111874593009E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -3738,35 +3740,34 @@
 								<MiningSchema>
 									<MiningField name="Pclass"/>
 									<MiningField name="Sex"/>
-									<MiningField name="SibSp"/>
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="3.2646214725583294E-5">
+									<Node id="10" score="-7.07489601051007E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2" score="-6.43198956158614E-4">
+									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-									</Node>
-									<Node id="3">
-										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0012483174026053344">
+										<Node id="5" score="-7.922645163932125E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="4" score="0.0021645041856606945">
+										<Node id="3" score="2.4149793305868735E-5">
+											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
+										</Node>
+										<Node id="4" score="-0.001018081240352533">
+											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
+										</Node>
+									</Node>
+									<Node id="6">
+										<SimplePredicate field="Sex" operator="equal" value="female"/>
+										<Node id="9" score="0.0014220418460082341">
+											<SimplePredicate field="Pclass" operator="isMissing"/>
+										</Node>
+										<Node id="7" score="0.002016004545882668">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="5">
+										<Node id="8" score="5.805946878527859E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
-											<Node id="8" score="8.34513498635196E-5">
-												<SimplePredicate field="SibSp" operator="isMissing"/>
-											</Node>
-											<Node id="6" score="4.4000642783369556E-4">
-												<SimplePredicate field="SibSp" operator="lessThan" value="2.5"/>
-											</Node>
-											<Node id="7" score="-0.001342768962017184">
-												<SimplePredicate field="SibSp" operator="greaterOrEqual" value="2.5"/>
-											</Node>
 										</Node>
 									</Node>
 								</Node>
@@ -3781,30 +3782,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-6.292331488911627E-5">
+									<Node id="10" score="-8.292871214064867E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-8.479043106198275E-4">
+										<Node id="5" score="-8.242107541132251E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="-2.887064406898915E-4">
+										<Node id="3" score="-3.5639979697303225E-4">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-9.883089706022358E-4">
+										<Node id="4" score="-9.516057022630097E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0013913042989966244">
+										<Node id="9" score="0.001237479925123003">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.0020566892468727197">
+										<Node id="7" score="0.002153624909532527">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="6.150218598078468E-4">
+										<Node id="8" score="2.499470198503996E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -3817,35 +3818,34 @@
 								<MiningSchema>
 									<MiningField name="Pclass"/>
 									<MiningField name="Sex"/>
-									<MiningField name="SibSp"/>
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-1.88851767278634E-5">
+									<Node id="10" score="-4.5846864050121966E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2" score="-8.553203968399933E-4">
+									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-									</Node>
-									<Node id="3">
-										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0015004623433492333">
+										<Node id="5" score="-7.929967715630601E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="4" score="0.0020727100550998138">
+										<Node id="3" score="-8.773191349660497E-5">
+											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
+										</Node>
+										<Node id="4" score="-0.001010751359076666">
+											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
+										</Node>
+									</Node>
+									<Node id="6">
+										<SimplePredicate field="Sex" operator="equal" value="female"/>
+										<Node id="9" score="0.0012721070100720792">
+											<SimplePredicate field="Pclass" operator="isMissing"/>
+										</Node>
+										<Node id="7" score="0.0020038179252916404">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="5">
+										<Node id="8" score="4.934915490051103E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
-											<Node id="8" score="7.232303766432208E-4">
-												<SimplePredicate field="SibSp" operator="isMissing"/>
-											</Node>
-											<Node id="6" score="0.0016681214169032871">
-												<SimplePredicate field="SibSp" operator="lessThan" value="0.5"/>
-											</Node>
-											<Node id="7" score="-2.5029372544290834E-4">
-												<SimplePredicate field="SibSp" operator="greaterOrEqual" value="0.5"/>
-											</Node>
 										</Node>
 									</Node>
 								</Node>
@@ -3860,30 +3860,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-4.991978001792126E-5">
+									<Node id="10" score="1.1851421944779012E-4">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-7.177068889263432E-4">
+										<Node id="5" score="-6.525989417998629E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="1.3235400878056414E-4">
+										<Node id="3" score="5.508259745942121E-4">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-9.574676549462401E-4">
+										<Node id="4" score="-9.695724688858024E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0013317087211719171">
+										<Node id="9" score="0.0014655822727384434">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.002003053709809695">
+										<Node id="7" score="0.0021668776924365645">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="4.072336548510429E-4">
+										<Node id="8" score="4.7120817018140595E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -3899,30 +3899,30 @@
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-1.6171128940797088E-4">
+									<Node id="10" score="1.3769918185757656E-6">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
 									<Node id="2">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-8.585454067910153E-4">
+										<Node id="5" score="-7.284696882767905E-4">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="3" score="-1.8996730811355006E-4">
+										<Node id="3" score="1.82269513434449E-4">
 											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
 										</Node>
-										<Node id="4" score="-0.001059118836394255">
+										<Node id="4" score="-9.946217837540478E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
 										</Node>
 									</Node>
 									<Node id="6">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0012653668003011407">
+										<Node id="9" score="0.0012763560687752958">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.002126116865183386">
+										<Node id="7" score="0.0020475640736149895">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="3.807070113943885E-4">
+										<Node id="8" score="4.660995573614404E-4">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
 										</Node>
 									</Node>
@@ -3935,34 +3935,35 @@
 								<MiningSchema>
 									<MiningField name="Pclass"/>
 									<MiningField name="Sex"/>
+									<MiningField name="Age"/>
 								</MiningSchema>
 								<Node id="1">
 									<True/>
-									<Node id="10" score="-2.0479204640614792E-5">
+									<Node id="10" score="3.551924528834446E-5">
 										<SimplePredicate field="Sex" operator="isMissing"/>
 									</Node>
-									<Node id="2">
+									<Node id="2" score="-6.593689332559386E-4">
 										<SimplePredicate field="Sex" operator="equal" value="male"/>
-										<Node id="5" score="-7.645775797342463E-4">
-											<SimplePredicate field="Pclass" operator="isMissing"/>
-										</Node>
-										<Node id="3" score="-1.4334105076879638E-4">
-											<SimplePredicate field="Pclass" operator="lessThan" value="1.5"/>
-										</Node>
-										<Node id="4" score="-9.368295264019391E-4">
-											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="1.5"/>
-										</Node>
 									</Node>
-									<Node id="6">
+									<Node id="3">
 										<SimplePredicate field="Sex" operator="equal" value="female"/>
-										<Node id="9" score="0.0012544698404893268">
+										<Node id="9" score="0.001415968244275645">
 											<SimplePredicate field="Pclass" operator="isMissing"/>
 										</Node>
-										<Node id="7" score="0.002017230420087634">
+										<Node id="4" score="0.002190722302732759">
 											<SimplePredicate field="Pclass" operator="lessThan" value="2.5"/>
 										</Node>
-										<Node id="8" score="3.267880544913855E-4">
+										<Node id="5">
 											<SimplePredicate field="Pclass" operator="greaterOrEqual" value="2.5"/>
+											<Node id="8" score="4.677617846714161E-4">
+												<SimplePredicate field="Age" operator="isMissing"/>
+											</Node>
+											<Node id="6" score="8.07963491400398E-4">
+												<SimplePredicate field="Age" operator="lessThan" value="35"/>
+											</Node>
+											<Node id="7" score="-0.0012641741768579472">
+												<SimplePredicate field="Age" operator="greaterOrEqual" value="35"/>
+											</Node>
 										</Node>
 									</Node>
 								</Node>

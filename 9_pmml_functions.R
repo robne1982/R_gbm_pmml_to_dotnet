@@ -17,11 +17,26 @@ get_value <- function(init_value) {
 # get operator to use
 get_operator <- function(operator)
 {
-  if(operator == "greaterOrEqual") operator <- ">="
-  if(operator == "lessThan") operator <- "<"
-  if(operator == "isMissing") operator <- "is Nothing"
-  if(operator == "equal") operator <- "="
-  return(operator)
+  print(operator)
+  op = ""
+  if(operator == "greaterOrEqual") {
+    op <- ">=" 
+    } 
+  else if(operator == "lessThan") {
+    op <- "<"
+    }
+  else if(operator == "isMissing") {
+    op <- "is Nothing"
+  }
+  else if(operator == "equal") {
+    op <- "=" 
+  }
+  else {
+    stop(paste0("Unknown operator type of :", operator))
+  }
+  
+  return(op)
+  
 }
 
 
@@ -43,6 +58,7 @@ process_complete_branch <- function(nodeset, fileConn, vbScoreName) {
 # A complex branch is one with a nested if statement
 process_complex_branch_start <- function(nodeset, fileConn) {
   
+  print(nodeset$SimplePredicate)
   operator <- get_operator(nodeset$SimplePredicate[2])
   
   val <- get_value(nodeset$SimplePredicate[3])

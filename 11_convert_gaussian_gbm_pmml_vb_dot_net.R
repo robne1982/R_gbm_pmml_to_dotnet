@@ -12,7 +12,7 @@ vbScoreName <- 'score'
 file.remove("vb_dot_net_model.txt")
 fileConn <- file("vb_dot_net_model.txt", 'a')
 
-smpModelXML <- xmlToList(xmlParse('mdl.pmml'))
+smpModelXML <- xmlToList(xmlParse('iris_mdl.pmml'))
 
 
 
@@ -39,7 +39,7 @@ writeLines((paste0("Dim score as double =  ", rescaleConstant)),fileConn)
 # For now, loop over tree
 for (i in 1:(length(miningModelSegmentation) -1 )) {
   
-  writeLines((paste0("Tree #", i)),fileConn)
+  writeLines((paste0("'  Tree #", i)),fileConn)
   
   # This gets us to the root of this tree
   it_treemodel <- miningModelSegmentation[[i]]$TreeModel$Node

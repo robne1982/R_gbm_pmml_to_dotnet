@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PMML xmlns="http://www.dmg.org/PMML-4_3" version="4.3">
+	<Header>
+		<Application name="JPMML-R" version="1.2.1"/>
+		<Timestamp>2016-10-09T15:43:24Z</Timestamp>
+	</Header>
+	<DataDictionary>
+		<DataField name="SepalLength" optype="continuous" dataType="double"/>
+		<DataField name="SepalWidth" optype="continuous" dataType="double"/>
+		<DataField name="PetalLength" optype="continuous" dataType="double"/>
+		<DataField name="PetalWidth" optype="continuous" dataType="double"/>
+	</DataDictionary>
+	<MiningModel functionName="regression">
+		<MiningSchema>
+			<MiningField name="SepalLength" usageType="target"/>
+			<MiningField name="SepalWidth"/>
+			<MiningField name="PetalLength"/>
+			<MiningField name="PetalWidth"/>
+		</MiningSchema>
+		<Targets>
+			<Target field="SepalLength" rescaleConstant="5.843333333333335"/>
+		</Targets>
+		<Segmentation multipleModelMethod="sum">
+			<Segment id="1">
+				<True/>
+				<TreeModel functionName="regression" splitCharacteristic="multiSplit">
+					<MiningSchema>
+						<MiningField name="SepalWidth"/>
+						<MiningField name="PetalLength"/>
+						<MiningField name="PetalWidth"/>
+					</MiningSchema>
+					<Node id="1">
+						<True/>
+						<Node id="16" score="-2.4666666666667916E-5">
+							<SimplePredicate field="PetalLength" operator="isMissing"/>
+						</Node>
+						<Node id="2">
+							<SimplePredicate field="PetalLength" operator="lessThan" value="3.95"/>
+							<Node id="8" score="-7.79696969696971E-4">
+								<SimplePredicate field="PetalWidth" operator="isMissing"/>
+							</Node>
+							<Node id="3">
+								<SimplePredicate field="PetalWidth" operator="lessThan" value="0.35"/>
+								<Node id="6" score="-8.998550724637695E-4">
+									<SimplePredicate field="SepalWidth" operator="isMissing"/>
+								</Node>
+								<Node id="4" score="-0.0011733333333333344">
+									<SimplePredicate field="SepalWidth" operator="lessThan" value="3.3"/>
+								</Node>
+								<Node id="5" score="-6.89487179487181E-4">
+									<SimplePredicate field="SepalWidth" operator="greaterOrEqual" value="3.3"/>
+								</Node>
+							</Node>
+							<Node id="7" score="-5.033333333333346E-4">
+								<SimplePredicate field="PetalWidth" operator="greaterOrEqual" value="0.35"/>
+							</Node>
+						</Node>
+						<Node id="9">
+							<SimplePredicate field="PetalLength" operator="greaterOrEqual" value="3.95"/>
+							<Node id="15" score="5.685714285714274E-4">
+								<SimplePredicate field="PetalLength" operator="isMissing"/>
+							</Node>
+							<Node id="10">
+								<SimplePredicate field="PetalLength" operator="lessThan" value="5.55"/>
+								<Node id="13" score="3.33333333333332E-4">
+									<SimplePredicate field="SepalWidth" operator="isMissing"/>
+								</Node>
+								<Node id="11" score="1.6666666666666541E-4">
+									<SimplePredicate field="SepalWidth" operator="lessThan" value="3.05"/>
+								</Node>
+								<Node id="12" score="6.666666666666655E-4">
+									<SimplePredicate field="SepalWidth" operator="greaterOrEqual" value="3.05"/>
+								</Node>
+							</Node>
+							<Node id="14" score="0.001156666666666666">
+								<SimplePredicate field="PetalLength" operator="greaterOrEqual" value="5.55"/>
+							</Node>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="2">
+				<True/>
+				<TreeModel functionName="regression" splitCharacteristic="multiSplit">
+					<MiningSchema>
+						<MiningField name="SepalWidth"/>
+						<MiningField name="PetalLength"/>
+					</MiningSchema>
+					<Node id="1">
+						<True/>
+						<Node id="13" score="-8.197991794871943E-5">
+							<SimplePredicate field="PetalLength" operator="isMissing"/>
+						</Node>
+						<Node id="2">
+							<SimplePredicate field="PetalLength" operator="lessThan" value="3.8499999999999996"/>
+							<Node id="5" score="-8.046704774535825E-4">
+								<SimplePredicate field="PetalLength" operator="isMissing"/>
+							</Node>
+							<Node id="3" score="-9.69784615384617E-4">
+								<SimplePredicate field="PetalLength" operator="lessThan" value="1.45"/>
+							</Node>
+							<Node id="4" score="-7.037673931623947E-4">
+								<SimplePredicate field="PetalLength" operator="greaterOrEqual" value="1.45"/>
+							</Node>
+						</Node>
+						<Node id="6">
+							<SimplePredicate field="PetalLength" operator="greaterOrEqual" value="3.8499999999999996"/>
+							<Node id="12" score="3.736293478260855E-4">
+								<SimplePredicate field="PetalLength" operator="isMissing"/>
+							</Node>
+							<Node id="7">
+								<SimplePredicate field="PetalLength" operator="lessThan" value="5.15"/>
+								<Node id="10" score="1.1316133333333187E-4">
+									<SimplePredicate field="SepalWidth" operator="isMissing"/>
+								</Node>
+								<Node id="8" score="-1.5336600000000146E-4">
+									<SimplePredicate field="SepalWidth" operator="lessThan" value="2.75"/>
+								</Node>
+								<Node id="9" score="2.464249999999985E-4">
+									<SimplePredicate field="SepalWidth" operator="greaterOrEqual" value="2.75"/>
+								</Node>
+							</Node>
+							<Node id="11" score="8.620068749999984E-4">
+								<SimplePredicate field="PetalLength" operator="greaterOrEqual" value="5.15"/>
+							</Node>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="3">
+				<True/>
+				<TreeModel functionName="regression" splitCharacteristic="multiSplit">
+					<MiningSchema>
+						<MiningField name="SepalWidth"/>
+						<MiningField name="PetalLength"/>
+					</MiningSchema>
+					<Node id="1">
+						<True/>
+						<Node id="16" score="-4.978708994005814E-5">
+							<SimplePredicate field="PetalLength" operator="isMissing"/>
+						</Node>
+						<Node id="2">
+							<SimplePredicate field="PetalLength" operator="lessThan" value="4.300000000000001"/>
+							<Node id="11" score="-6.301399948453408E-4">
+								<SimplePredicate field="PetalLength" operator="isMissing"/>
+							</Node>
+							<Node id="3">
+								<SimplePredicate field="PetalLength" operator="lessThan" value="3.4"/>
+								<Node id="9" score="-7.740157688089341E-4">
+									<SimplePredicate field="SepalWidth" operator="isMissing"/>
+								</Node>
+								<Node id="4" score="-0.001071457223995728">
+									<SimplePredicate field="SepalWidth" operator="lessThan" value="3.25"/>
+								</Node>
+								<Node id="5">
+									<SimplePredicate field="SepalWidth" operator="greaterOrEqual" value="3.25"/>
+									<Node id="8" score="-6.323769806247465E-4">
+										<SimplePredicate field="SepalWidth" operator="isMissing"/>
+									</Node>
+									<Node id="6" score="-7.118895180256424E-4">
+										<SimplePredicate field="SepalWidth" operator="lessThan" value="3.55"/>
+									</Node>
+									<Node id="7" score="-5.600928557148411E-4">
+										<SimplePredicate field="SepalWidth" operator="greaterOrEqual" value="3.55"/>
+									</Node>
+								</Node>
+							</Node>
+							<Node id="10" score="-2.24671904584305E-4">
+								<SimplePredicate field="PetalLength" operator="greaterOrEqual" value="3.4"/>
+							</Node>
+						</Node>
+						<Node id="12">
+							<SimplePredicate field="PetalLength" operator="greaterOrEqual" value="4.300000000000001"/>
+							<Node id="15" score="6.888438799393926E-4">
+								<SimplePredicate field="PetalLength" operator="isMissing"/>
+							</Node>
+							<Node id="13" score="4.297782175921037E-4">
+								<SimplePredicate field="PetalLength" operator="lessThan" value="5.45"/>
+							</Node>
+							<Node id="14" score="0.001040432993124999">
+								<SimplePredicate field="PetalLength" operator="greaterOrEqual" value="5.45"/>
+							</Node>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="4">
+				<True/>
+				<TreeModel functionName="regression" splitCharacteristic="multiSplit">
+					<MiningSchema>
+						<MiningField name="SepalWidth"/>
+						<MiningField name="PetalLength"/>
+						<MiningField name="PetalWidth"/>
+					</MiningSchema>
+					<Node id="1">
+						<True/>
+						<Node id="16" score="-4.4561001390977234E-5">
+							<SimplePredicate field="PetalLength" operator="isMissing"/>
+						</Node>
+						<Node id="2">
+							<SimplePredicate field="PetalLength" operator="lessThan" value="4.05"/>
+							<Node id="8" score="-7.294510053797361E-4">
+								<SimplePredicate field="PetalWidth" operator="isMissing"/>
+							</Node>
+							<Node id="3">
+								<SimplePredicate field="PetalWidth" operator="lessThan" value="0.35"/>
+								<Node id="6" score="-9.02648391873337E-4">
+									<SimplePredicate field="SepalWidth" operator="isMissing"/>
+								</Node>
+								<Node id="4" score="-0.001110282904713269">
+									<SimplePredicate field="SepalWidth" operator="lessThan" value="3.3499999999999996"/>
+								</Node>
+								<Node id="5" score="-7.13889743837035E-4">
+									<SimplePredicate field="SepalWidth" operator="greaterOrEqual" value="3.3499999999999996"/>
+								</Node>
+							</Node>
+							<Node id="7" score="-4.496706118131503E-4">
+								<SimplePredicate field="PetalWidth" operator="greaterOrEqual" value="0.35"/>
+							</Node>
+						</Node>
+						<Node id="9">
+							<SimplePredicate field="PetalLength" operator="greaterOrEqual" value="4.05"/>
+							<Node id="15" score="5.233965628923839E-4">
+								<SimplePredicate field="PetalWidth" operator="isMissing"/>
+							</Node>
+							<Node id="10">
+								<SimplePredicate field="PetalWidth" operator="lessThan" value="1.95"/>
+								<Node id="13" score="3.409013218718484E-4">
+									<SimplePredicate field="PetalLength" operator="isMissing"/>
+								</Node>
+								<Node id="11" score="2.660400691190594E-4">
+									<SimplePredicate field="PetalLength" operator="lessThan" value="4.65"/>
+								</Node>
+								<Node id="12" score="3.8493735290290077E-4">
+									<SimplePredicate field="PetalLength" operator="greaterOrEqual" value="4.65"/>
+								</Node>
+							</Node>
+							<Node id="14" score="8.753516705748454E-4">
+								<SimplePredicate field="PetalWidth" operator="greaterOrEqual" value="1.95"/>
+							</Node>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+			<Segment id="5">
+				<True/>
+				<TreeModel functionName="regression" splitCharacteristic="multiSplit">
+					<MiningSchema>
+						<MiningField name="PetalLength"/>
+					</MiningSchema>
+					<Node id="1">
+						<True/>
+						<Node id="13" score="-6.713859999286796E-5">
+							<SimplePredicate field="PetalLength" operator="isMissing"/>
+						</Node>
+						<Node id="2">
+							<SimplePredicate field="PetalLength" operator="lessThan" value="3.95"/>
+							<Node id="5" score="-8.370158340765991E-4">
+								<SimplePredicate field="PetalLength" operator="isMissing"/>
+							</Node>
+							<Node id="3" score="-9.862475318764801E-4">
+								<SimplePredicate field="PetalLength" operator="lessThan" value="1.45"/>
+							</Node>
+							<Node id="4" score="-6.971111173892106E-4">
+								<SimplePredicate field="PetalLength" operator="greaterOrEqual" value="1.45"/>
+							</Node>
+						</Node>
+						<Node id="6">
+							<SimplePredicate field="PetalLength" operator="greaterOrEqual" value="3.95"/>
+							<Node id="12" score="4.752749058388517E-4">
+								<SimplePredicate field="PetalLength" operator="isMissing"/>
+							</Node>
+							<Node id="7" score="1.4995164309897898E-5">
+								<SimplePredicate field="PetalLength" operator="lessThan" value="4.6"/>
+							</Node>
+							<Node id="8">
+								<SimplePredicate field="PetalLength" operator="greaterOrEqual" value="4.6"/>
+								<Node id="11" score="7.650806690237485E-4">
+									<SimplePredicate field="PetalLength" operator="isMissing"/>
+								</Node>
+								<Node id="9" score="5.415607155646841E-4">
+									<SimplePredicate field="PetalLength" operator="lessThan" value="5.55"/>
+								</Node>
+								<Node id="10" score="0.0010444806108475789">
+									<SimplePredicate field="PetalLength" operator="greaterOrEqual" value="5.55"/>
+								</Node>
+							</Node>
+						</Node>
+					</Node>
+				</TreeModel>
+			</Segment>
+		</Segmentation>
+	</MiningModel>
+</PMML>
