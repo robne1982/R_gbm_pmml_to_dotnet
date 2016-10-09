@@ -1,0 +1,3006 @@
+Public Function fnScoreModel(ByRef dt As DataTable)
+For Each row As DataRow In dt.Rows
+Dim score as double =  -0.4732877044469254
+' Tree #1
+IF row.item("Sex") is Nothing THEN 
+score = score + -4.568448197302679E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -8.169033389988453E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -1.3414308109224908E-4
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -0.001029517278960987
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0015337294786483412
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002248666798340909
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 5.91827930481942E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #2
+IF row.item("Sex") is Nothing THEN 
+score = score + -1.5045093108400902E-4
+ END IF
+IF row.item("Sex") ="male" THEN 
+score = score + -8.986348614768933E-4
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0013662756761070082
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0023876822852678865
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+'Start of a complex loop
+IF row.item("Age") is Nothing THEN 
+score = score + 1.796415272289287E-4
+ END IF
+IF row.item("Age") <27.5 THEN 
+score = score + 5.717975302225236E-4
+ END IF
+IF row.item("Age") >=27.5 THEN 
+score = score + -0.0010948654825002548
+ END IF
+'End of a complex loop
+ END IF
+'End of a complex loop
+ END IF
+' Tree #3
+IF row.item("Sex") is Nothing THEN 
+score = score + -8.425755190480405E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -9.000973668878945E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + 8.200865491906824E-5
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -0.0011912526919368612
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0014883810388191794
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002383980428250711
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 5.19170740667248E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #4
+IF row.item("Sex") is Nothing THEN 
+score = score + 2.941131314459955E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -7.190546442743705E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -1.3322186891238631E-4
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -9.12515700324142E-4
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0013757085698856402
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.00233973358823146
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 3.22891773534284E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #5
+IF row.item("Sex") is Nothing THEN 
+score = score + -8.490919454000037E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -8.8885568107013E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -5.334942187263983E-5
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -0.0011170556285161407
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0014044532067882527
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002376681719241334
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 4.0697200570002706E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #6
+IF row.item("Sex") is Nothing THEN 
+score = score + -7.569513456211568E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -8.40369250631251E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -9.69096309511998E-5
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -0.001035847857529885
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.001398314839176415
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0023325063383565444
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 2.745772387133608E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #7
+IF row.item("Sex") is Nothing THEN 
+score = score + -4.737420098273007E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -8.135915733611209E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -2.7480020584875565E-5
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -0.001019397602199537
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0014444662458996996
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002223052348185662
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 5.1919000840044E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #8
+IF row.item("Sex") is Nothing THEN 
+score = score + -1.3312577401789125E-4
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -8.849840529406329E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + 1.2795405905055012E-4
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -0.0011339264702943982
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.001330757232626387
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002363295729919369
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 2.2749692045032446E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #9
+IF row.item("Sex") is Nothing THEN 
+score = score + -5.7646213060050055E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -9.008980881922991E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -9.093610936423259E-5
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -0.0011042651651274847
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0015045319402298217
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.00241770830953547
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 5.432936567501918E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #10
+IF row.item("Sex") is Nothing THEN 
+score = score + 4.617727587596007E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -7.772715635988384E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + 2.4162327888304342E-4
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -0.0010409329482761675
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0015419356108713218
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0024249979694357334
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 4.8716668258605244E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #11
+IF row.item("Sex") is Nothing THEN 
+score = score + 7.388008916596971E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -7.126374050486476E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + 1.9016733331986052E-4
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -9.796641586506006E-4
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0013583701980608477
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002152029190872541
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 4.32434706447205E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #12
+IF row.item("Sex") is Nothing THEN 
+score = score + 8.276578320992772E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -8.0296035943864E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + 1.228418714039934E-4
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -0.0010645098686004602
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0016759587190432004
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0024722211596031065
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 6.10372217705679E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #13
+IF row.item("Sex") is Nothing THEN 
+score = score + 3.6472710708532565E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+score = score + -7.718584698733972E-4
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0016422849889115606
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002355798350178455
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+'Start of a complex loop
+IF row.item("SibSp") is Nothing THEN 
+score = score + 7.690298303461083E-4
+ END IF
+IF row.item("SibSp") <2.5 THEN 
+score = score + 0.0011641511000096841
+ END IF
+IF row.item("SibSp") >=2.5 THEN 
+score = score + -0.0012424966333957313
+ END IF
+'End of a complex loop
+ END IF
+'End of a complex loop
+ END IF
+' Tree #14
+IF row.item("Sex") is Nothing THEN 
+score = score + -1.2182892193178186E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -8.156063104061435E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + 1.5223974775469953E-5
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -0.0010405472609793314
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.001505974346118334
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002405293338414535
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 4.54657777659395E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #15
+IF row.item("Sex") is Nothing THEN 
+score = score + 1.5619830116689266E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -8.036664575188334E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -1.416964768395503E-4
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -9.786364964648995E-4
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0015038170741128603
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0022671680700393415
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 5.441758220909984E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #16
+IF row.item("Sex") is Nothing THEN 
+score = score + 2.5357697223008597E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -7.388019177741016E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + 1.4568526126284767E-4
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -0.001004544702507176
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0014550756865724403
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002290863064262471
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 5.402273407225424E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #17
+IF row.item("Sex") is Nothing THEN 
+score = score + -4.1351456332521084E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -7.988298799231526E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + 2.2784646943808248E-5
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -9.86033189842207E-4
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.001389987642790036
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002200965797545432
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 3.909565825841131E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #18
+IF row.item("Sex") is Nothing THEN 
+score = score + -3.1171151029937726E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -8.019080871201788E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -1.6599051332614022E-4
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -9.73549556153083E-4
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0013688383468048672
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0022518285462240907
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 6.295907379887734E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #19
+IF row.item("Sex") is Nothing THEN 
+score = score + -4.1268677253332834E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -7.455298606229709E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -2.715045025497984E-5
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -9.344141021421409E-4
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0013162874196368248
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002324580044118751
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 2.534924911288487E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #20
+IF row.item("Sex") is Nothing THEN 
+score = score + 6.164269782224171E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -7.301837841485358E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + 3.51938933055527E-4
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -0.0010149529202548681
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0015141651615648145
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0023364482914152575
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 5.679763546136198E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #21
+IF row.item("Sex") is Nothing THEN 
+score = score + 8.925401963974873E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -7.053326336960231E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -1.0964839132469345E-5
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -9.023829537748695E-4
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0015046114958940922
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0023879360501040422
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 4.518822326575762E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #22
+IF row.item("Sex") is Nothing THEN 
+score = score + -4.274737641002224E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+score = score + -9.073198422262524E-4
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.001558928537826455
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0023168010939428234
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+'Start of a complex loop
+IF row.item("Age") is Nothing THEN 
+score = score + 7.81370980252519E-4
+ END IF
+IF row.item("Age") <6.5 THEN 
+score = score + 0.001604613583517719
+ END IF
+IF row.item("Age") >=6.5 THEN 
+score = score + 2.5589697816834876E-4
+ END IF
+'End of a complex loop
+ END IF
+'End of a complex loop
+ END IF
+' Tree #23
+IF row.item("Sex") is Nothing THEN 
+score = score + -6.057397825597856E-6
+ END IF
+IF row.item("Sex") ="male" THEN 
+score = score + -8.493397437079491E-4
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0014814717091966862
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0022819825947455667
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+'Start of a complex loop
+IF row.item("SibSp") is Nothing THEN 
+score = score + 5.635525604339698E-4
+ END IF
+IF row.item("SibSp") <1.5 THEN 
+score = score + 9.284786776913251E-4
+ END IF
+IF row.item("SibSp") >=1.5 THEN 
+score = score + -0.0010264826647587927
+ END IF
+'End of a complex loop
+ END IF
+'End of a complex loop
+ END IF
+' Tree #24
+IF row.item("Sex") is Nothing THEN 
+score = score + -4.376750279880128E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -8.413829137960142E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -2.5408283083936566E-4
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -0.0010095525410743498
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.001478478902503069
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0023152143237564304
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 5.371515535930378E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #25
+IF row.item("Sex") is Nothing THEN 
+score = score + 6.749761503442566E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -8.712378613378951E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -5.119714029276588E-5
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -0.0011033955083917673
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0016759407178430971
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002286011490849054
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 9.339627506736904E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #26
+IF row.item("Sex") is Nothing THEN 
+score = score + 6.884111609896052E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+score = score + -7.333919011617475E-4
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0014433989078688322
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002368955463116867
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+'Start of a complex loop
+IF row.item("SibSp") is Nothing THEN 
+score = score + 4.229134751594606E-4
+ END IF
+IF row.item("SibSp") <0.5 THEN 
+score = score + 0.001178940005697843
+ END IF
+IF row.item("SibSp") >=0.5 THEN 
+score = score + -4.5911747713531893E-4
+ END IF
+'End of a complex loop
+ END IF
+'End of a complex loop
+ END IF
+' Tree #27
+IF row.item("Sex") is Nothing THEN 
+score = score + 4.8920798109531344E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -7.250444293250608E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -1.2288400520461392E-4
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -9.045876750490474E-4
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0014009711645539115
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0022739136246989564
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 3.6287742816520983E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #28
+IF row.item("Sex") is Nothing THEN 
+score = score + -8.304968974265956E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -8.799029305048413E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -2.3270916705243373E-4
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -0.0010515499721161319
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0014226924729962682
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0023016035465460733
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 4.4746237768758014E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #29
+IF row.item("Sex") is Nothing THEN 
+score = score + -2.7028209256571556E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -8.601424135913367E-4
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + -4.366937311531769E-4
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + -0.0011464514659216833
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0016114297259351331
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002219860788100805
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 7.478501538290181E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #30
+IF row.item("Sex") is Nothing THEN 
+score = score + 2.9836340332732296E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -7.93919537781505E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + 4.5497154435678765E-5
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -0.0010155836859427527
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0016019717417010808
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002400360471788588
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 6.553108188830367E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #31
+IF row.item("Sex") is Nothing THEN 
+score = score + 2.1461121746544636E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+score = score + -7.367019841557152E-4
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.001412231659962155
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.00228891938655766
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+'Start of a complex loop
+IF row.item("Age") is Nothing THEN 
+score = score + 5.013872686940974E-4
+ END IF
+IF row.item("Age") <36 THEN 
+score = score + 7.930298776185488E-4
+ END IF
+IF row.item("Age") >=36 THEN 
+score = score + -0.0012484683848526105
+ END IF
+'End of a complex loop
+ END IF
+'End of a complex loop
+ END IF
+' Tree #32
+IF row.item("Sex") is Nothing THEN 
+score = score + -5.680978764882825E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -8.505771372389402E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -1.59624767443652E-4
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -0.0010218388357352082
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0014580926050329539
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002257205513886625
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 3.7621666689259916E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #33
+IF row.item("Sex") is Nothing THEN 
+score = score + -1.5012264652342218E-4
+ END IF
+IF row.item("Sex") ="male" THEN 
+score = score + -9.864271695929196E-4
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0014946095821799228
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0023836821281790752
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+'Start of a complex loop
+IF row.item("Age") is Nothing THEN 
+score = score + 5.314476573475077E-4
+ END IF
+IF row.item("Age") <6.5 THEN 
+score = score + 0.0014784068908947046
+ END IF
+IF row.item("Age") >=6.5 THEN 
+score = score + 8.695658853963975E-5
+ END IF
+'End of a complex loop
+ END IF
+'End of a complex loop
+ END IF
+' Tree #34
+IF row.item("Sex") is Nothing THEN 
+score = score + -5.52480270608621E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+score = score + -8.482844492189296E-4
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.001458259393005515
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0022788648530696403
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+'Start of a complex loop
+IF row.item("Age") is Nothing THEN 
+score = score + 5.5896573814072E-4
+ END IF
+IF row.item("Age") <36.5 THEN 
+score = score + 9.066237720800417E-4
+ END IF
+IF row.item("Age") >=36.5 THEN 
+score = score + -0.001631279875677006
+ END IF
+'End of a complex loop
+ END IF
+'End of a complex loop
+ END IF
+' Tree #35
+IF row.item("Sex") is Nothing THEN 
+score = score + -1.2986580782585777E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -9.022321565844407E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -2.5425144554620333E-4
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -0.0010721470985900227
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0015556205218741025
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0023507627323299885
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 4.4004786839868016E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #36
+IF row.item("Sex") is Nothing THEN 
+score = score + 6.002150252989783E-7
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -7.2782275353561E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -1.3555017441948042E-4
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -8.850632612655558E-4
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0013108453031285693
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002324130325860961
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 2.847338877033628E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #37
+IF row.item("Sex") is Nothing THEN 
+score = score + -3.9845798970035384E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -7.949683182369033E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -7.765451905826947E-5
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -9.635677154797445E-4
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.001359067073261534
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0022939474804491915
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 5.023450319881418E-5
+ END IF
+'End of a complex loop
+ END IF
+' Tree #38
+IF row.item("Sex") is Nothing THEN 
+score = score + 4.531453784986286E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -7.77932445783917E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + 1.9749551679140443E-4
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -0.001051052275305007
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0015554746097385802
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002280033919759538
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 6.778393891498145E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #39
+IF row.item("Sex") is Nothing THEN 
+score = score + -8.459422358464756E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Age") is Nothing THEN 
+score = score + -8.567870651736776E-4
+ END IF
+IF row.item("Age") <13 THEN 
+score = score + -3.074795643992211E-4
+ END IF
+IF row.item("Age") >=13 THEN 
+score = score + -0.0010614818414056684
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0013745493926647532
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.00231017206361532
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 4.143050724786451E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #40
+IF row.item("Sex") is Nothing THEN 
+score = score + 5.384069599039465E-6
+ END IF
+IF row.item("Sex") ="male" THEN 
+score = score + -8.727852900609192E-4
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0014956108617492723
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002195857965867276
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+'Start of a complex loop
+IF row.item("SibSp") is Nothing THEN 
+score = score + 6.131076620389114E-4
+ END IF
+IF row.item("SibSp") <2.5 THEN 
+score = score + 9.027699349751384E-4
+ END IF
+IF row.item("SibSp") >=2.5 THEN 
+score = score + -0.0012117646574593183
+ END IF
+'End of a complex loop
+ END IF
+'End of a complex loop
+ END IF
+' Tree #41
+IF row.item("Sex") is Nothing THEN 
+score = score + -8.527546362663421E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -8.457455767862167E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -3.389394138038812E-4
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -9.816127609048855E-4
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.001456357826996193
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0023568618744531553
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 4.3839672987093167E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #42
+IF row.item("Sex") is Nothing THEN 
+score = score + 8.463977590058407E-6
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -7.129975263306775E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -1.3682510777153275E-4
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -8.71507842353499E-4
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.00138537090010545
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002259992035988364
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 3.483201247014236E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #43
+IF row.item("Sex") is Nothing THEN 
+score = score + 6.8285229626311E-6
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -7.313322727085782E-4
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + -3.4769079834127276E-4
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + -9.7363215125635E-4
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.001247472269904001
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0022591578334667755
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 2.1111144869335351E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #44
+IF row.item("Sex") is Nothing THEN 
+score = score + -1.008086005279264E-6
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -7.69456564591722E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -8.1810041376603E-5
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -9.363331267108722E-4
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0015410810906175145
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002350904551254064
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 5.62040787459895E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #45
+IF row.item("Sex") is Nothing THEN 
+score = score + 4.765867430227211E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -6.946710618366806E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -2.6991530098050284E-5
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -8.788585188680269E-4
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0015223539890481111
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0023393597505236476
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 6.943076091742568E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #46
+IF row.item("Sex") is Nothing THEN 
+score = score + 1.26467304673002E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -8.381327478168615E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + 3.197074882957937E-5
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -0.0010415335652147308
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0015280976761609633
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002134915913004004
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 6.857977354683849E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #47
+IF row.item("Sex") is Nothing THEN 
+score = score + 3.8466426174674714E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -8.704537537516111E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -1.123985669073572E-4
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -0.0010860474307440137
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0015808764284738267
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002141681134574235
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 8.00626402594997E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #48
+IF row.item("Sex") is Nothing THEN 
+score = score + 3.955137854833272E-6
+ END IF
+IF row.item("Sex") ="male" THEN 
+score = score + -7.915049210512309E-4
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.001353826752968154
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002118611771939235
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+'Start of a complex loop
+IF row.item("Age") is Nothing THEN 
+score = score + 4.360847302028568E-4
+ END IF
+IF row.item("Age") <27.5 THEN 
+score = score + 8.838243780471E-4
+ END IF
+IF row.item("Age") >=27.5 THEN 
+score = score + -0.0013548738611741163
+ END IF
+'End of a complex loop
+ END IF
+'End of a complex loop
+ END IF
+' Tree #49
+IF row.item("Sex") is Nothing THEN 
+score = score + -7.330505806612724E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+score = score + -9.278622101801382E-4
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.001463822901082345
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0022534518655697995
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+'Start of a complex loop
+IF row.item("Age") is Nothing THEN 
+score = score + 4.338720778378393E-4
+ END IF
+IF row.item("Age") <19.5 THEN 
+score = score + 0.0011263154064977713
+ END IF
+IF row.item("Age") >=19.5 THEN 
+score = score + -4.1492942180981947E-4
+ END IF
+'End of a complex loop
+ END IF
+'End of a complex loop
+ END IF
+' Tree #50
+IF row.item("Sex") is Nothing THEN 
+score = score + -1.7439089691945842E-4
+ END IF
+IF row.item("Sex") ="male" THEN 
+score = score + -9.787041142056978E-4
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0014234393870854198
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002229889505833961
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+'Start of a complex loop
+IF row.item("SibSp") is Nothing THEN 
+score = score + 4.62814980929069E-4
+ END IF
+IF row.item("SibSp") <1.5 THEN 
+score = score + 7.625180113552951E-4
+ END IF
+IF row.item("SibSp") >=1.5 THEN 
+score = score + -9.357991610599853E-4
+ END IF
+'End of a complex loop
+ END IF
+'End of a complex loop
+ END IF
+' Tree #51
+IF row.item("Sex") is Nothing THEN 
+score = score + 3.118291856636982E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -7.350341075542813E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + 1.2111701422963972E-5
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -9.852251353310653E-4
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0014790345718203276
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0022012847084763396
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 4.633703171478106E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #52
+IF row.item("Sex") is Nothing THEN 
+score = score + 2.428148008160825E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -7.126325069100217E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + 4.2069032175743664E-5
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -9.273031669166393E-4
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0013894618790596918
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0022261958482373842
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 4.6227018348441096E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #53
+IF row.item("Sex") is Nothing THEN 
+score = score + -1.1631176124903838E-4
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -7.994936676668303E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + 5.401906276151847E-5
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -0.0010229454983798315
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0012138569836968609
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0020587556793353655
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 2.8681535931572355E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #54
+IF row.item("Sex") is Nothing THEN 
+score = score + -6.022342928402547E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -7.985900336300588E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -5.966672862689592E-5
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -9.880575477334338E-4
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.001377391018912887
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0022126017340515156
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 4.6097926202466984E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #55
+IF row.item("Sex") is Nothing THEN 
+score = score + -5.120081330914871E-6
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -7.315874644110474E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + 6.834012514391328E-5
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -9.526200878407076E-4
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0013676202334503744
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002269281142712173
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 3.135659310739057E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #56
+IF row.item("Sex") is Nothing THEN 
+score = score + -7.52673130150943E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -8.827984774043698E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -2.445282800260705E-4
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -0.0010696793910511691
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0013915772704008683
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0022277510282961515
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 3.403874033325125E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #57
+IF row.item("Sex") is Nothing THEN 
+score = score + -4.0716805536419545E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+score = score + -7.515882097386241E-4
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.001343363941718204
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002255492010155507
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+'Start of a complex loop
+IF row.item("Age") is Nothing THEN 
+score = score + 3.4255675551616324E-4
+ END IF
+IF row.item("Age") <7 THEN 
+score = score + 0.0010167843898367997
+ END IF
+IF row.item("Age") >=7 THEN 
+score = score + -1.3903441185571998E-4
+ END IF
+'End of a complex loop
+ END IF
+'End of a complex loop
+ END IF
+' Tree #58
+IF row.item("Sex") is Nothing THEN 
+score = score + -1.7439002291194334E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -7.736492326453012E-4
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + -3.2361064911708474E-4
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + -0.0010293529732863333
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0012175552200622583
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002124731825365914
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 2.5506296809374576E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #59
+IF row.item("Sex") is Nothing THEN 
+score = score + -4.5542576875643106E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -8.384359291440755E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -1.2907274786725861E-4
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -0.0010251104505327115
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.001408936948304666
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0021635997141395188
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 5.180156275274095E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #60
+IF row.item("Sex") is Nothing THEN 
+score = score + 1.1335249994680167E-4
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -7.288044371645469E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + 8.315832068817123E-5
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -9.78935144559934E-4
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.001488709391323915
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002255758710136862
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 7.306841821440616E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #61
+IF row.item("Sex") is Nothing THEN 
+score = score + -6.899638877445823E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -9.079951477761578E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + 4.330706391693549E-5
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -0.0011822444340300225
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0014401460330776556
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0020865569080417883
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 5.525370704403392E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #62
+IF row.item("Sex") is Nothing THEN 
+score = score + 2.9336034332430926E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -8.088424945619491E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + 2.8385777412835987E-5
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -0.0010437210143014815
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0014935614891294035
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0021458958484047177
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 8.249187708722064E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #63
+IF row.item("Sex") is Nothing THEN 
+score = score + -2.7242581671165862E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+score = score + -7.70129534965148E-4
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0012456307956191326
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0021518383634219775
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+'Start of a complex loop
+IF row.item("Age") is Nothing THEN 
+score = score + 2.705973365907551E-4
+ END IF
+IF row.item("Age") <28 THEN 
+score = score + 6.269095412797843E-4
+ END IF
+IF row.item("Age") >=28 THEN 
+score = score + -9.369051348553993E-4
+ END IF
+'End of a complex loop
+ END IF
+'End of a complex loop
+ END IF
+' Tree #64
+IF row.item("Sex") is Nothing THEN 
+score = score + -1.5620040930382464E-4
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -8.883634931509012E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -7.040795176971502E-5
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -0.0010690364038977497
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.001422363970054411
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0021851904405622395
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 4.2193581201135753E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #65
+IF row.item("Sex") is Nothing THEN 
+score = score + -1.077323093134069E-4
+ END IF
+IF row.item("Sex") ="male" THEN 
+score = score + -8.032567529467322E-4
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0011681341860139667
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002113756503074345
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+'Start of a complex loop
+IF row.item("SibSp") is Nothing THEN 
+score = score + 3.0323572528801086E-4
+ END IF
+IF row.item("SibSp") <2.5 THEN 
+score = score + 6.468027587830409E-4
+ END IF
+IF row.item("SibSp") >=2.5 THEN 
+score = score + -0.0011139782878789876
+ END IF
+'End of a complex loop
+ END IF
+'End of a complex loop
+ END IF
+' Tree #66
+IF row.item("Sex") is Nothing THEN 
+score = score + -9.31685729929418E-6
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -9.167901677681246E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -2.4619186196386084E-4
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -0.00110792688294905
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0013392189001571802
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0022153563658813247
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 3.0281238582496026E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #67
+IF row.item("Sex") is Nothing THEN 
+score = score + 1.5924997345975845E-4
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -5.753793066307942E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + 7.096549672736076E-4
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -8.780762689282757E-4
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0013821657810356486
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0021139032962529643
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 4.845677623690744E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #68
+IF row.item("Sex") is Nothing THEN 
+score = score + -1.7838983995637772E-4
+ END IF
+IF row.item("Sex") ="male" THEN 
+score = score + -8.902408516383844E-4
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0012944053566270844
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0021428664800648913
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+'Start of a complex loop
+IF row.item("SibSp") is Nothing THEN 
+score = score + 2.1713671470373834E-5
+ END IF
+IF row.item("SibSp") <1.5 THEN 
+score = score + 4.0855891700678995E-4
+ END IF
+IF row.item("SibSp") >=1.5 THEN 
+score = score + -0.00131736602461722
+ END IF
+'End of a complex loop
+ END IF
+'End of a complex loop
+ END IF
+' Tree #69
+IF row.item("Sex") is Nothing THEN 
+score = score + -8.343436904417207E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -8.452825363606717E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -3.8058408773826434E-5
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -0.0010677176292957136
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0013004290741193431
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0021127895656132163
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 5.08377594912817E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #70
+IF row.item("Sex") is Nothing THEN 
+score = score + 6.81751431642573E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -7.577539325616526E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + 5.192111641418691E-5
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -9.437603627317778E-4
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.001379097455217591
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0021243136055651814
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 3.6846185406127E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #71
+IF row.item("Sex") is Nothing THEN 
+score = score + -7.324187957667465E-6
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -7.920609020773944E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + 1.9859693473657266E-5
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -9.732620650329939E-4
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.001390488084068096
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0021071476218706134
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 7.087875481096043E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #72
+IF row.item("Sex") is Nothing THEN 
+score = score + -1.9099477497348462E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -7.264583767042733E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + 1.4370695979778412E-4
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -9.45891374604792E-4
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.001278476082831278
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002174204985051339
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 2.2101835104370644E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #73
+IF row.item("Sex") is Nothing THEN 
+score = score + 1.1833527969004528E-4
+ END IF
+IF row.item("Sex") ="male" THEN 
+score = score + -6.828434194785582E-4
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0014779112540367664
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002193393385400546
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+'Start of a complex loop
+IF row.item("SibSp") is Nothing THEN 
+score = score + 4.8245785387846364E-4
+ END IF
+IF row.item("SibSp") <2.5 THEN 
+score = score + 7.709918663017816E-4
+ END IF
+IF row.item("SibSp") >=2.5 THEN 
+score = score + -0.0012198928194191118
+ END IF
+'End of a complex loop
+ END IF
+'End of a complex loop
+ END IF
+' Tree #74
+IF row.item("Sex") is Nothing THEN 
+score = score + -3.1919861914598115E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -7.944502343992441E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -5.582167331971168E-5
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -9.905463125619517E-4
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0013396756508565263
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002266964284213933
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 2.1920188554965921E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #75
+IF row.item("Sex") is Nothing THEN 
+score = score + -7.550407917432484E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+score = score + -8.384492703792449E-4
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0013805743249553264
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0021083804899894496
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+'Start of a complex loop
+IF row.item("Age") is Nothing THEN 
+score = score + 5.400094582961986E-4
+ END IF
+IF row.item("Age") <1.5 THEN 
+score = score + 0.0012841249928032166
+ END IF
+IF row.item("Age") >=1.5 THEN 
+score = score + 2.481994447640345E-4
+ END IF
+'End of a complex loop
+ END IF
+'End of a complex loop
+ END IF
+' Tree #76
+IF row.item("Sex") is Nothing THEN 
+score = score + -3.362712611976599E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -8.680557368952311E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -1.7250399179827942E-4
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -0.0010537460217853673
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0013823729406507205
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002164802243579065
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 5.306144589818895E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #77
+IF row.item("Sex") is Nothing THEN 
+score = score + -2.9824525052781663E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+score = score + -7.386354321236902E-4
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0012832931168926835
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002122373934553105
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+'Start of a complex loop
+IF row.item("SibSp") is Nothing THEN 
+score = score + 1.6869322477660147E-4
+ END IF
+IF row.item("SibSp") <2.5 THEN 
+score = score + 4.859961714980889E-4
+ END IF
+IF row.item("SibSp") >=2.5 THEN 
+score = score + -0.0016399335715358767
+ END IF
+'End of a complex loop
+ END IF
+'End of a complex loop
+ END IF
+' Tree #78
+IF row.item("Sex") is Nothing THEN 
+score = score + -7.438000313939604E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -8.187929084137945E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -9.929506366036726E-6
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -0.0010287531957538507
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0014044536878755163
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0020904910363609436
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 6.302115374419626E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #79
+IF row.item("Sex") is Nothing THEN 
+score = score + -1.0820216719863199E-4
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -8.762048737574425E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -2.1886612663513032E-4
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -0.0010513038413315081
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0013287061224920456
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0022039167665063053
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 2.3786387053224383E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #80
+IF row.item("Sex") is Nothing THEN 
+score = score + -4.250807414933141E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -8.723299890127223E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -4.0778364899601356E-4
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -9.940451872703752E-4
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0014947902168475915
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0020648803316811472
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 7.570265388276961E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #81
+IF row.item("Sex") is Nothing THEN 
+score = score + 1.958463582683535E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -7.761548927503829E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -1.950104103402534E-4
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -9.822751032603793E-4
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0013068103438193942
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002111240871870536
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 4.2292988707184296E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #82
+IF row.item("Sex") is Nothing THEN 
+score = score + -1.112976436507042E-4
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -7.512374385869966E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -1.1825072915458114E-4
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -9.603491193816338E-4
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0011859952739752492
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0020196577103077182
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 2.689665940095333E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #83
+IF row.item("Sex") is Nothing THEN 
+score = score + 4.794930642368448E-6
+ END IF
+IF row.item("Sex") ="male" THEN 
+score = score + -8.395291994263703E-4
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0014797562195896098
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002189435618908071
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+'Start of a complex loop
+IF row.item("SibSp") is Nothing THEN 
+score = score + 7.154860972466515E-4
+ END IF
+IF row.item("SibSp") <0.5 THEN 
+score = score + 0.0012050106982647475
+ END IF
+IF row.item("SibSp") >=0.5 THEN 
+score = score + 8.19836723997036E-5
+ END IF
+'End of a complex loop
+ END IF
+'End of a complex loop
+ END IF
+' Tree #84
+IF row.item("Sex") is Nothing THEN 
+score = score + -3.416407756812693E-6
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -7.6705832922466E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -5.907005254242126E-5
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -9.644178930785584E-4
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0014112792031675968
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0021379547920491026
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 5.634910161391736E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #85
+IF row.item("Sex") is Nothing THEN 
+score = score + 1.0573645697113509E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -7.851696074439534E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -8.060415389173114E-6
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -9.967930927802999E-4
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0014279913153546389
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0021501194756831984
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 4.756193937619011E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #86
+IF row.item("Sex") is Nothing THEN 
+score = score + -1.0704327041871762E-4
+ END IF
+IF row.item("Sex") ="male" THEN 
+score = score + -8.985348690136389E-4
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0014653158784678373
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002229524925400379
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+'Start of a complex loop
+IF row.item("Age") is Nothing THEN 
+score = score + 4.7772264858578364E-4
+ END IF
+IF row.item("Age") <6.5 THEN 
+score = score + 0.0013810916211881392
+ END IF
+IF row.item("Age") >=6.5 THEN 
+score = score + -2.499912460105585E-4
+ END IF
+'End of a complex loop
+ END IF
+'End of a complex loop
+ END IF
+' Tree #87
+IF row.item("Sex") is Nothing THEN 
+score = score + -1.6050252148983873E-4
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -8.763181961856918E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -1.2550723319399365E-4
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -0.0010775994330728279
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0012906068054446115
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.00211181885382185
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 3.872735522296491E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #88
+IF row.item("Sex") is Nothing THEN 
+score = score + -2.3401265477891327E-4
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -9.05237542402944E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + 2.5352507433655865E-6
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -0.0011183987650850733
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.001228298707544868
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0020526434983502437
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 2.493892684634845E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #89
+IF row.item("Sex") is Nothing THEN 
+score = score + -4.98793380268211E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -7.815139580158088E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + 1.2200740542710973E-4
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -9.927267442751922E-4
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.001253344828828563
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002114381578463681
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 3.9230807919344565E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #90
+IF row.item("Sex") is Nothing THEN 
+score = score + -7.704606932934975E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -7.545142586690722E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -2.3463402580941304E-4
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -9.130427601688787E-4
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0012031048598775283
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002109076708764998
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 2.488145123827266E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #91
+IF row.item("Sex") is Nothing THEN 
+score = score + 1.0466651486571352E-4
+ END IF
+IF row.item("Sex") ="male" THEN 
+score = score + -7.244316849289101E-4
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0014716915228604203
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002176851025593255
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+'Start of a complex loop
+IF row.item("SibSp") is Nothing THEN 
+score = score + 6.580459427840723E-4
+ END IF
+IF row.item("SibSp") <2.5 THEN 
+score = score + 9.104282753525205E-4
+ END IF
+IF row.item("SibSp") >=2.5 THEN 
+score = score + -8.791919010419303E-4
+ END IF
+'End of a complex loop
+ END IF
+'End of a complex loop
+ END IF
+' Tree #92
+IF row.item("Sex") is Nothing THEN 
+score = score + -1.6628187832129964E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+score = score + -7.594998568236655E-4
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0012937789798299576
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0020860058555839125
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+'Start of a complex loop
+IF row.item("Age") is Nothing THEN 
+score = score + 2.638840413498165E-4
+ END IF
+IF row.item("Age") <5.5 THEN 
+score = score + 0.0010817047188237943
+ END IF
+IF row.item("Age") >=5.5 THEN 
+score = score + -2.1937363170298856E-4
+ END IF
+'End of a complex loop
+ END IF
+'End of a complex loop
+ END IF
+' Tree #93
+IF row.item("Sex") is Nothing THEN 
+score = score + 1.3647327337760933E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -7.116645896167778E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + 2.4294994719597894E-4
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -9.747139286496264E-4
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0013311442904134106
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0019717299015048896
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 5.852569350329214E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #94
+IF row.item("Sex") is Nothing THEN 
+score = score + 3.305765946034419E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -7.117976260918983E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -1.4443499909317645E-5
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -8.801244841359693E-4
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0013994163998364323
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0021608231739173017
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 5.00533402657628E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #95
+IF row.item("Sex") is Nothing THEN 
+score = score + 3.2646214725583294E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+score = score + -6.43198956158614E-4
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0012483174026053344
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0021645041856606945
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+'Start of a complex loop
+IF row.item("SibSp") is Nothing THEN 
+score = score + 8.34513498635196E-5
+ END IF
+IF row.item("SibSp") <2.5 THEN 
+score = score + 4.4000642783369556E-4
+ END IF
+IF row.item("SibSp") >=2.5 THEN 
+score = score + -0.001342768962017184
+ END IF
+'End of a complex loop
+ END IF
+'End of a complex loop
+ END IF
+' Tree #96
+IF row.item("Sex") is Nothing THEN 
+score = score + -6.292331488911627E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -8.479043106198275E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -2.887064406898915E-4
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -9.883089706022358E-4
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0013913042989966244
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0020566892468727197
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 6.150218598078468E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #97
+IF row.item("Sex") is Nothing THEN 
+score = score + -1.88851767278634E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+score = score + -8.553203968399933E-4
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0015004623433492333
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.0020727100550998138
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+'Start of a complex loop
+IF row.item("SibSp") is Nothing THEN 
+score = score + 7.232303766432208E-4
+ END IF
+IF row.item("SibSp") <0.5 THEN 
+score = score + 0.0016681214169032871
+ END IF
+IF row.item("SibSp") >=0.5 THEN 
+score = score + -2.5029372544290834E-4
+ END IF
+'End of a complex loop
+ END IF
+'End of a complex loop
+ END IF
+' Tree #98
+IF row.item("Sex") is Nothing THEN 
+score = score + -4.991978001792126E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -7.177068889263432E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + 1.3235400878056414E-4
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -9.574676549462401E-4
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0013317087211719171
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002003053709809695
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 4.072336548510429E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #99
+IF row.item("Sex") is Nothing THEN 
+score = score + -1.6171128940797088E-4
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -8.585454067910153E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -1.8996730811355006E-4
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -0.001059118836394255
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0012653668003011407
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002126116865183386
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 3.807070113943885E-4
+ END IF
+'End of a complex loop
+ END IF
+' Tree #100
+IF row.item("Sex") is Nothing THEN 
+score = score + -2.0479204640614792E-5
+ END IF
+IF row.item("Sex") ="male" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + -7.645775797342463E-4
+ END IF
+IF row.item("Pclass") <1.5 THEN 
+score = score + -1.4334105076879638E-4
+ END IF
+IF row.item("Pclass") >=1.5 THEN 
+score = score + -9.368295264019391E-4
+ END IF
+'End of a complex loop
+ END IF
+IF row.item("Sex") ="female" THEN 
+'Start of a complex loop
+IF row.item("Pclass") is Nothing THEN 
+score = score + 0.0012544698404893268
+ END IF
+IF row.item("Pclass") <2.5 THEN 
+score = score + 0.002017230420087634
+ END IF
+IF row.item("Pclass") >=2.5 THEN 
+score = score + 3.267880544913855E-4
+ END IF
+'End of a complex loop
+ END IF
+Console.WriteLine(" score delta  = "  & CStr(score - row.Item("mdl_pred")))
+Next row
+End Function
