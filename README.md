@@ -1,6 +1,6 @@
 # R_gbm_pmml_to_dotnet
 
-Convert R gbm models to .NET code, via PMML. This isn't the prettiest or most generic code, but you may it useful if you need to do something similar.
+Convert R gbm models to .NET code, via PMML. This isn't the prettiest or most generic code, but you may find it useful if you need to do something similar.
 
 ## Introduction
 
